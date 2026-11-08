@@ -13,3 +13,12 @@ artifacts/checkpoints/
 .env.*
 !.env.example
 .pytest_cache/
+
+# Local project notes and handoff documents
+/pitch.md
+/context.md
+/findings.md
+/PROJECT_STATUS.md
+
+# Uploaded CRCSC source data (large local inputs)
+/data/CRCSC_data/
