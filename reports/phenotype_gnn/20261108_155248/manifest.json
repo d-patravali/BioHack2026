@@ -1,0 +1,44 @@
+{
+  "node_counts": {
+    "gene/protein": 27610,
+    "effect/phenotype": 15311,
+    "pathway": 2516,
+    "disease": 17080
+  },
+  "canonical_relation_pairs": {
+    "phenotype_protein": 3330,
+    "protein_protein": 642150,
+    "pathway_protein": 42646,
+    "disease_protein": 80411,
+    "disease_phenotype_positive": 150317
+  },
+  "settings": {
+    "output": "/Users/dhruv.patravali/Desktop/Coding Projects/BioHack2026/reports/phenotype_gnn/20261108_155248",
+    "epochs": 60,
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "width": 24,
+    "evaluate_every": 10
+  },
+  "initialization_seed": 42,
+  "annotation_holdout": "60/20/20 by annotated gene; existing test masks reused; exploratory not untouched tests",
+  "elapsed_seconds": 139.89125849999255,
+  "input_sha256": {
+    "data/raw/primekg/kg.csv": "0a5a010fcd88dcec572a573d98c26c1c244a11567092b6161d3ded611cfb5c69",
+    "data/processed/primekg/nodes.csv": "1b0a1999e5153ecac45d24fc619d0b7f6750eb6bba247e6339979371c365500e",
+    "reports/inference/test_splits.csv": "ff01722f0cddafad5c48386af0270409bbfaa74d4dbfb2748aa3b2891a0153f7"
+  },
+  "input_hashes_unchanged": true,
+  "code_sha256": {
+    "analysis/phenotype_gnn.py": "ce80654ee338fde5fb7c4ba41c3b8484558850a840d9008b8f4da5f1d8b40653",
+    "scripts/explore_inference.py": "314bd80389b0a5553ed5467d3362a112947a7f205d61334035e23f5bdaadb8b4"
+  },
+  "versions": {
+    "torch": "2.4.0",
+    "numpy": "2.4.4",
+    "pandas": "2.2.2"
+  }
+}

@@ -22,3 +22,9 @@ artifacts/checkpoints/
 
 # Uploaded CRCSC source data (large local inputs)
 /data/CRCSC_data/
+
+# Local training checkpoints and incomplete attempts
+/reports/**/model_*.pt
+/reports/crcsc/20261108_172607/
+/reports/crcsc_drug_gnn/20261108_173609/
+/docs/demo/recordings/20261108_181803/

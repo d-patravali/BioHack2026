@@ -1,0 +1,5 @@
+subtype,genes,higher_expression_genes,lower_expression_genes,l1_mass
+CMS1,100,84,16,1.0
+CMS2,100,58,42,1.0
+CMS3,100,52,48,1.0
+CMS4,100,100,0,1.0

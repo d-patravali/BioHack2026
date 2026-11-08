@@ -1,0 +1,71 @@
+{
+  "experiment": "CMS molecular profile reproducibility, not drug prediction",
+  "annotation_url": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPLnnn/GPL570/annot/GPL570.annot.gz",
+  "annotation_metadata": [
+    "^Annotation",
+    "!Annotation_date = Aug 09 2016",
+    "!Annotation_platform = GPL570",
+    "!Annotation_platform_title = [HG-U133_Plus_2] Affymetrix Human Genome U133 Plus 2.0 Array",
+    "!Annotation_platform_organism = Homo sapiens",
+    "#ID = ID from Platform data table",
+    "#Gene title = Entrez Gene name",
+    "#Gene symbol = Entrez Gene symbol",
+    "#Gene ID = Entrez Gene identifier",
+    "#UniGene title = Entrez UniGene name",
+    "#UniGene symbol = Entrez UniGene symbol",
+    "#UniGene ID = Entrez UniGene identifier",
+    "#Nucleotide Title = Entrez Nucleotide title",
+    "#GI = GenBank identifier",
+    "#GenBank Accession = GenBank accession",
+    "#Platform_CLONEID = CLONE_ID from Platform data table",
+    "#Platform_ORF = ORF from Platform data table",
+    "#Platform_SPOTID = SPOT_ID from Platform data table",
+    "#Chromosome location = Entrez gene chromosome and location",
+    "#Chromosome annotation = Entrez gene chromosome annotation",
+    "#GO:Function = Gene Ontology Function term",
+    "#GO:Process = Gene Ontology Process term",
+    "#GO:Component = Gene Ontology Component term",
+    "#GO:Function ID = Gene Ontology Function identifier",
+    "#GO:Process ID = Gene Ontology Process identifier",
+    "#GO:Component ID = Gene Ontology Component identifier"
+  ],
+  "settings": {
+    "signature_size": 100,
+    "expression_genes": 2000,
+    "logistic_C": 1,
+    "null_seeds": [
+      17,
+      29,
+      43
+    ]
+  },
+  "expression_probe_count": 54675,
+  "samples": 566,
+  "single_id_probes": 42904,
+  "unique_annotated_genes": 20848,
+  "primekg_mapped_genes": 18664,
+  "variable_mapped_genes": 18664,
+  "primekg_mapping_pct": 89.52417498081351,
+  "pathways_min5_genes": 1411,
+  "mapping_status": {
+    "single_ncbi_id": 42904,
+    "unmapped": 9557,
+    "ambiguous": 2214
+  },
+  "input_sha256": {
+    "data/CRCSC_data/FRENCH_clinical.tsv": "6899a8920d82938e66615e0857dd580db8800f1e9e90eb8ebbba86cbb57b8008",
+    "data/CRCSC_data/GSE39582_frma_expression.tsv": "a1e0742aff336cabcfd403c69870a74e48cc9e0790608bb019e282973addec8e",
+    "data/CRCSC_data/cms_labels_public_all.txt": "9ab613c855f0e31dfdcf417fd5c6f4dfb064cb482132855025e7e3eae7a881b1",
+    "data/external/geo/GPL570.annot.gz": "d7cd44352127b1e34f3a720ebea86093ef255a38f1612a85a2962b71bde8f394",
+    "data/raw/primekg/kg.csv": "0a5a010fcd88dcec572a573d98c26c1c244a11567092b6161d3ded611cfb5c69",
+    "data/processed/primekg/nodes.csv": "1b0a1999e5153ecac45d24fc619d0b7f6750eb6bba247e6339979371c365500e"
+  },
+  "input_hashes_unchanged": true,
+  "code_sha256": "52d56875999e10d2ecc616020bff3fe5775f42d6c7d1b8d47b19e8b1df380028",
+  "versions": {
+    "pandas": "2.2.2",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  }
+}

@@ -1,0 +1,5 @@
+subtype,selected_genes,selected_genes_with_targets,unique_connected_drugs,interpretation
+CMS1,100,21,74,"connectivity only; no action direction, vulnerability or efficacy inferred"
+CMS2,100,18,117,"connectivity only; no action direction, vulnerability or efficacy inferred"
+CMS3,100,21,65,"connectivity only; no action direction, vulnerability or efficacy inferred"
+CMS4,100,10,81,"connectivity only; no action direction, vulnerability or efficacy inferred"
