@@ -1,0 +1,5 @@
+basis,subtype,samples,associated_genes,sample_gene_observations,mapped_genes,mapping_pct,unmatched_genes,ambiguous_genes,validated_enriched_genes,shared_with_other_subtypes,exclusive_observed_genes
+supplementary_binary_mutation_matrix,GI.CIN,224,10590,24376,9909,93.56940509915015,681,0,,10230,360
+supplementary_binary_mutation_matrix,GI.HM-indel,60,17003,76068,15829,93.0953361171558,1174,0,,14037,2966
+supplementary_binary_mutation_matrix,GI.HM-SNV,6,12333,25059,11603,94.08092110597583,730,0,,11730,603
+supplementary_binary_mutation_matrix,GI.GS,49,4022,5565,3779,93.95822973644952,243,0,,3947,75

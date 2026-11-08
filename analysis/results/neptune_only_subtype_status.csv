@@ -1,0 +1,5 @@
+basis,subtype,samples,associated_genes,sample_gene_observations,mapped_genes,mapping_pct,unmatched_genes,ambiguous_genes,validated_enriched_genes,shared_with_other_subtypes,exclusive_observed_genes
+Neptune_export: sample-gene observations unavailable,GI.CIN,224,,,,,,,,,
+Neptune_export: sample-gene observations unavailable,GI.HM-indel,60,,,,,,,,,
+Neptune_export: sample-gene observations unavailable,GI.HM-SNV,6,,,,,,,,,
+Neptune_export: sample-gene observations unavailable,GI.GS,49,,,,,,,,,

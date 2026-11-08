@@ -1,0 +1,11 @@
+{
+  "direct_target_pairs": 16380,
+  "target_genes": 2836,
+  "target_drugs": 5690,
+  "indication_pairs": 9388,
+  "indication_drugs": 1801,
+  "indication_diseases": 1363,
+  "crc_lexical_candidates": 85,
+  "crc_indication_pairs": 23,
+  "crc_indication_drugs": 12
+}

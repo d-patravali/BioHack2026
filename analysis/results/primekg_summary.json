@@ -1,0 +1,20 @@
+{
+  "raw_rows": 8100498,
+  "node_indices": 129375,
+  "relation_labels": 30,
+  "blank_cells": {
+    "relation": 0,
+    "display_relation": 0,
+    "x_index": 0,
+    "x_id": 0,
+    "x_type": 0,
+    "x_name": 0,
+    "x_source": 0,
+    "y_index": 0,
+    "y_id": 0,
+    "y_type": 0,
+    "y_name": 0,
+    "y_source": 0
+  },
+  "repeated_external_identifier_rows": 126
+}

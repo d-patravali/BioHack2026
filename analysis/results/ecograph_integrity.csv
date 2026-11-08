@@ -1,0 +1,9 @@
+file,rows,columns,duplicate_rows,blank_cells,missing_marker_cells,duplicate_ids,blank_ids,labels,status,endpoint_or_label_type_mismatch_rows,undeclared_from_edge_rows,undeclared_from_unique_nodes,undeclared_to_edge_rows,undeclared_to_unique_nodes
+vertices_gene.csv,21333,~id|~label|symbol:String|exp_hr_coeff:String|hr_pval:String,0,0,34226,0,0,Gene,parsed,,,,,
+vertices_subtype.csv,4,~id|~label,0,0,0,0,0,Subtype,parsed,,,,,
+vertices_sample.csv,404,~id|~label|patient_barcode:String|sex:String,0,0,0,0,0,Sample,parsed,,,,,
+vertices_age.csv,2,~id|~label|age_bucket:String,0,0,0,0,0,Age,parsed,,,,,
+edges_has_gene_part001.csv,0,,0,0,0,0,0,unavailable,empty_no_schema,,,,,
+edges_has_subtype.csv,339,~id|~from|~to|~label,0,0,0,0,0,HAS_SUBTYPE,parsed,0.0,0.0,0.0,0.0,0.0
+edges_in_pathway.csv,35818,~id|~from|~to|~label,0,0,0,0,0,IN_PATHWAY,parsed,0.0,0.0,0.0,35818.0,2036.0
+edges_is_of_age.csv,404,~id|~from|~to|~label,0,0,0,0,0,IS_OF_AGE,parsed,0.0,0.0,0.0,0.0,0.0

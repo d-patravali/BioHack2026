@@ -1,0 +1,7 @@
+basis,subtype_a,subtype_b,genes_a,genes_b,overlap,union,jaccard
+supplementary_observed_gene_sets,GI.CIN,GI.HM-indel,10590,17003,9829,17764,0.553310065300608
+supplementary_observed_gene_sets,GI.CIN,GI.HM-SNV,10590,12333,7791,15132,0.5148691514670896
+supplementary_observed_gene_sets,GI.CIN,GI.GS,10590,4022,2894,11718,0.24697047277692438
+supplementary_observed_gene_sets,GI.HM-indel,GI.HM-SNV,17003,12333,11306,18030,0.6270660011092624
+supplementary_observed_gene_sets,GI.HM-indel,GI.GS,17003,4022,3831,17194,0.22281028265674072
+supplementary_observed_gene_sets,GI.HM-SNV,GI.GS,12333,4022,3190,13165,0.24230915305734904

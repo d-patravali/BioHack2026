@@ -1,0 +1,51 @@
+{
+  "input": "kg.csv",
+  "input_bytes": 981751236,
+  "columns": [
+    "relation",
+    "display_relation",
+    "x_index",
+    "x_id",
+    "x_type",
+    "x_name",
+    "x_source",
+    "y_index",
+    "y_id",
+    "y_type",
+    "y_name",
+    "y_source"
+  ],
+  "raw_rows": 8100498,
+  "unique_nodes": 129375,
+  "node_types": 10,
+  "relation_labels": 30,
+  "typed_relationships": 56,
+  "blank_cells_by_column": {
+    "relation": 0,
+    "display_relation": 0,
+    "x_index": 0,
+    "x_id": 0,
+    "x_type": 0,
+    "x_name": 0,
+    "x_source": 0,
+    "y_index": 0,
+    "y_id": 0,
+    "y_type": 0,
+    "y_name": 0,
+    "y_source": 0
+  },
+  "raw_self_loop_rows": 0,
+  "node_metadata_conflict_rows": 0,
+  "repeated_external_id_node_rows": 126,
+  "core_types": [
+    "disease",
+    "effect/phenotype",
+    "gene/protein"
+  ],
+  "core_nodes": 60062,
+  "core_raw_rows": 1214512,
+  "core_unique_ordered_edges": 1214512,
+  "core_duplicate_ordered_rows": 0,
+  "core_edges_with_reverse_same_labels": 1214512,
+  "full_graph_duplicate_rows": "not computed; raw relationship counts include duplicates"
+}

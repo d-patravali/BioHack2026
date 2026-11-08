@@ -1,0 +1,39 @@
+{
+  "canonical_genes": 27610,
+  "canonical_phenotypes": 15311,
+  "canonical_diseases": 17080,
+  "direct_pairs": 3330,
+  "direct_genes": 1621,
+  "direct_phenotypes": 356,
+  "direct_gene_degree_quantiles": {
+    "0.0": 1.0,
+    "0.25": 1.0,
+    "0.5": 1.0,
+    "0.75": 2.0,
+    "1.0": 27.0
+  },
+  "indirect_pairs": 820900,
+  "indirect_genes": 8532,
+  "direct_or_indirect_genes": 8707,
+  "indirect_only_genes": 7086,
+  "direct_only_genes": 175,
+  "direct_pairs_reachable_via_disease": 1165,
+  "gd_pairs": 80411,
+  "dp_positive_pairs": 150317,
+  "dp_negative_pairs": 1193,
+  "dp_positive_negative_overlap": 172,
+  "ppi_unordered_pairs": 321075,
+  "ppi_canonical_self_loops": 0,
+  "gene_pathway_pairs": 42646,
+  "genes_with_pathways": 10849,
+  "genes_with_diseases": 9080,
+  "genes_with_ppi": 18354,
+  "raw_sha256": "0a5a010fcd88dcec572a573d98c26c1c244a11567092b6161d3ded611cfb5c69",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "pandas_version": "2.2.2",
+  "numpy_version": "2.4.4"
+}

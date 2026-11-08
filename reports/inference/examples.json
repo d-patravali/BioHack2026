@@ -1,0 +1,56 @@
+[
+  {
+    "kind": "documented_and_path",
+    "gene": 9,
+    "gene_name": "SORT1",
+    "disease": 31033,
+    "disease_name": "benign recurrent intrahepatic cholestasis",
+    "phenotype": 24475,
+    "phenotype_name": "Elevated hepatic transaminase"
+  },
+  {
+    "kind": "documented_and_path",
+    "gene": 22,
+    "gene_name": "FOS",
+    "disease": 31864,
+    "disease_name": "lipodystrophy",
+    "phenotype": 23000,
+    "phenotype_name": "Seizure"
+  },
+  {
+    "kind": "documented_and_path",
+    "gene": 22,
+    "gene_name": "FOS",
+    "disease": 30449,
+    "disease_name": "trigeminal neuralgia",
+    "phenotype": 84347,
+    "phenotype_name": "Allodynia"
+  },
+  {
+    "kind": "path_only",
+    "gene": 2,
+    "gene_name": "ZRSR2",
+    "disease": 28502,
+    "disease_name": "myelomonocytic leukemia",
+    "phenotype": 22180,
+    "phenotype_name": "Abnormal bleeding"
+  },
+  {
+    "kind": "path_only",
+    "gene": 2,
+    "gene_name": "ZRSR2",
+    "disease": 28502,
+    "disease_name": "myelomonocytic leukemia",
+    "phenotype": 22200,
+    "phenotype_name": "Abnormality of the gingiva"
+  },
+  {
+    "kind": "path_only",
+    "gene": 2,
+    "gene_name": "ZRSR2",
+    "disease": 28502,
+    "disease_name": "myelomonocytic leukemia",
+    "phenotype": 22566,
+    "phenotype_name": "Pallor"
+  }
+]

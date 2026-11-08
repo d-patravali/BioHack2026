@@ -1,0 +1,7 @@
+mode,seed,train_pairs,test_pairs,test_genes,test_phenotypes_without_training_labels,test_pairs_with_disease_path
+edge_holdout,17,2664,666,508,32,237
+edge_holdout,29,2664,666,525,33,241
+edge_holdout,43,2664,666,509,28,234
+gene_annotation_holdout,17,2699,631,324,25,199
+gene_annotation_holdout,29,2641,689,324,34,239
+gene_annotation_holdout,43,2651,679,324,32,253

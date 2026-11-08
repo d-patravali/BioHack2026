@@ -1,0 +1,12 @@
+type,source,nodes
+anatomy,UBERON,14035
+biological_process,GO,28642
+cellular_component,GO,4176
+disease,MONDO,15813
+disease,MONDO_grouped,1267
+drug,DrugBank,7957
+effect/phenotype,HPO,15311
+exposure,CTD,818
+gene/protein,NCBI,27671
+molecular_function,GO,11169
+pathway,REACTOME,2516
