@@ -77,3 +77,49 @@ def get_model_evaluation() -> dict:
     These evaluate sampled disease-indication recovery, not subtype therapeutic efficacy.
     """
     return query(repository(), "get_model_evaluation")
+
+
+ORIGINAL_TOOLS = (get_subtypes, get_drug_predictions, get_drug_targets,
+                  get_subtype_genes, get_gene_phenotypes, get_model_evaluation)
+
+
+def tools_for_backend(backend='ecograph'):
+    """Bind each agent's tools to a fixed backend, preserving original defaults."""
+    from .backends import make_repository, validate_backend
+    validate_backend(backend)
+    if backend == 'ecograph':
+        return list(ORIGINAL_TOOLS)
+    selected = make_repository(backend)
+
+    @function_tool
+    def get_subtypes(disease: str) -> dict:
+        """List CRCSC expression-defined CMS1–CMS4 for colorectal_cancer."""
+        return query(selected, 'get_subtypes', disease=disease)
+
+    @function_tool
+    def get_drug_predictions(subtype: str, top_k: int = 10) -> dict:
+        """Read cached CRCSC signed-profile CMS1–4 hypotheses, retaining all cutoff ties. top_k: 1–20."""
+        return query(selected, 'get_drug_predictions', subtype=subtype, top_k=top_k)
+
+    @function_tool
+    def get_drug_targets(drug_id: str) -> dict:
+        """Retrieve recorded direct PrimeKG targets for a DrugBank ID, excluding other roles."""
+        return query(selected, 'get_drug_targets', drug_id=drug_id)
+
+    @function_tool
+    def get_subtype_genes(subtype: str, limit: int = 20, gene: str = '') -> dict:
+        """Retrieve signed CMS expression associations, NOT mutation counts. limit: 1–50; gene: optional exact symbol/NCBI ID."""
+        return query(selected, 'get_subtype_genes', subtype=subtype, limit=limit, gene=gene)
+
+    @function_tool
+    def get_gene_phenotypes(gene: str, limit: int = 10) -> dict:
+        """Retrieve explicit PrimeKG phenotype–gene context, not model explanations. limit: 1–50."""
+        return query(selected, 'get_gene_phenotypes', gene=gene, limit=limit)
+
+    @function_tool
+    def get_model_evaluation() -> dict:
+        """Read the CRCSC experiment's actual popularity, PPI/pathway and drug-only AP; not subtype efficacy."""
+        return query(selected, 'get_model_evaluation')
+
+    return [get_subtypes, get_drug_predictions, get_drug_targets,
+            get_subtype_genes, get_gene_phenotypes, get_model_evaluation]

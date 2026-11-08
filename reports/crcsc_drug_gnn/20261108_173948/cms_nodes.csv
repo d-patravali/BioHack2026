@@ -1,0 +1,5 @@
+node_index,node_id,node_type,node_name,source,definition
+129375,crcsc:GSE39582:CMS1,crc_cms_subtype,CMS1,CRCSC GSE39582 discovery expression signature,expression-based CMS; not equivalent to ECoGraph GI genomic subtype
+129376,crcsc:GSE39582:CMS2,crc_cms_subtype,CMS2,CRCSC GSE39582 discovery expression signature,expression-based CMS; not equivalent to ECoGraph GI genomic subtype
+129377,crcsc:GSE39582:CMS3,crc_cms_subtype,CMS3,CRCSC GSE39582 discovery expression signature,expression-based CMS; not equivalent to ECoGraph GI genomic subtype
+129378,crcsc:GSE39582:CMS4,crc_cms_subtype,CMS4,CRCSC GSE39582 discovery expression signature,expression-based CMS; not equivalent to ECoGraph GI genomic subtype

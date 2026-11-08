@@ -43,3 +43,12 @@ node --check ui/static/app.js
 HTTP tests exercise actual recorded replay without a provider, live history/reset with an injected backend, and request validation. The SDK tests separately check that calls use Nebius Chat Completions. Tests make no paid API calls.
 
 Files: `server.py` provides HTTP/event streaming; `__main__.py` launches Uvicorn; `static/` contains the buildless HTML/CSS/JavaScript interface. The existing `agent/` package remains the tool/model backend.
+
+## Select a data backend
+
+In **Live agent** mode, the **Data backend** selector chooses the original
+ECoGraph GI workflow or CRCSC CMS expression workflow. Switching clears history
+and updates the evaluation panel and guided prompts. Recorded mode returns to
+ECoGraph because only those original recordings exist. CRCSC exposes cached
+seed42 PPI/pathway signed-profile scores and expression signatures; there is no
+fresh inference or literature verification. See [backend guide](../agent/BACKENDS.md).

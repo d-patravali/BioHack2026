@@ -6,3 +6,6 @@
 
 .intro .eyebrow.teal{font-size:22px;letter-spacing:.5px;line-height:1.35;margin-bottom:12px}
 @media(max-width:640px){.intro .eyebrow.teal{font-size:18px}}
+
+#backend{width:100%;margin-top:12px;padding:10px 8px;border:1px solid #ffffff30;border-radius:7px;background:#183a40;color:#eaf0e7;font:inherit;font-size:11px}#backend option{background:#183a40}#backend:disabled{opacity:.65}.backend-section{margin-top:24px}.sidebar{overflow-y:auto}.walkthrough .scenario-title{display:inline}.starter-row .scenario-title{margin-left:0}
+@media(max-width:880px){.backend-section{grid-column:1/-1;margin-top:0;display:flex;gap:12px;align-items:center}.backend-section .eyebrow{flex-shrink:0}#backend{margin-top:0}.backend-section .sidebar-hint{display:none}}

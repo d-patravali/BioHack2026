@@ -93,3 +93,9 @@ retrieved context, not a faithful model explanation or efficacy evidence.
 `--check-data` checks all local backends without loading `.env` or contacting
 Nebius. Data tests use synthetic fixtures; the SDK integration test exercises
 prediction -> targets/phenotypes/subtype evidence -> answer with a mock transport.
+
+## Selectable data backends
+
+ECoGraph remains the default. Use `python -m agent --backend crcsc` for CMS1–CMS4,
+or select Live agent → Data backend in the UI. See [backend instructions](BACKENDS.md)
+for the preserved checkpoint, cache provenance, and scientific boundaries.

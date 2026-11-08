@@ -13,7 +13,8 @@ from starlette.responses import FileResponse, JSONResponse, StreamingResponse
 from starlette.routing import Route
 
 from agent.config import PROJECT_ROOT, load_settings
-from agent.repository import ResearchRepository, query
+from agent.repository import query
+from agent.backends import BACKENDS, catalog, make_repository, validate_backend
 from agent.runtime import DebugHooks, create_agent, create_client, run_turn
 from agent.__main__ import error_message
 from scripts.rehearse_agent import SCENARIOS
@@ -41,7 +42,7 @@ def read_recording():
         return None
 
 
-async def live_answer(prompt, history, emit):
+async def live_answer(prompt, history, emit, backend='ecograph'):
     settings = load_settings()
     class BrowserHooks(DebugHooks):
         def cleaned(self, value):
@@ -58,12 +59,26 @@ async def live_answer(prompt, history, emit):
                 "call_id": getattr(context, "tool_call_id", tool.name), "result": self.cleaned(result)})
     hooks = BrowserHooks(settings.api_key)
     async with create_client(settings) as client:
-        result = await run_turn(create_agent(settings, client), history, prompt, hooks)
+        result = await run_turn(create_agent(settings, client, backend=backend), history, prompt, hooks)
     return hooks.safe(result.final_output), result.to_input_list()
 
 
+def scenarios(backend):
+    if backend == 'crcsc':
+        return [
+            {'id': 'candidate_audit', 'title': 'Inspect CMS2 drug hypotheses',
+             'short_title': 'Why do these drugs tie?', 'description': 'Inspect CMS2 targets and model controls',
+             'prompt': 'Retrieve the top five cached CMS2 drug hypotheses, inspect their shared targets and model evaluation, and explain the ties and limitations. Do not claim efficacy or literature verification.'},
+            {'id': 'phenotype_gene_evidence', 'title': 'Inspect CMS1 expression context',
+             'short_title': 'Inspect CMS expression', 'description': 'Separate expression from mutation evidence',
+             'prompt': 'Retrieve the three largest-weight CMS1 expression signature genes. Report higher/lower expression, signed weights and discovery FDR; retrieve phenotype context for the first gene. Separate recorded context from causal or therapeutic evidence.'}]
+    titles = [('Why do these drugs tie?', 'Inspect candidates, targets & controls'),
+              ('Trace phenotype evidence', 'Connect APC observations & annotations')]
+    return [{**s, 'short_title': titles[i][0], 'description': titles[i][1]} for i,s in enumerate(SCENARIOS)]
+
+
 def create_app(answer=live_answer):
-    repository = ResearchRepository()
+    repositories = {name: make_repository(name) for name in BACKENDS}
     sessions = {}
 
     async def home(request):
@@ -76,13 +91,18 @@ def create_app(answer=live_answer):
         return FileResponse(STATIC / name)
 
     async def bootstrap(request):
-        recording = read_recording()
-        evaluation = await asyncio.to_thread(query, repository, "get_model_evaluation")
-        return JSONResponse({**configuration(), "provider": "Nebius Token Factory",
-            "recorded_available": recording is not None,
-            "recorded_utc": recording.get("recorded_utc") if recording else None,
-            "evaluation": evaluation,
-            "scenarios": [{"id": s["id"], "title": s["title"], "prompt": s["prompt"]} for s in SCENARIOS]})
+        backend = request.query_params.get('backend', 'ecograph')
+        try:
+            validate_backend(backend)
+        except ValueError:
+            return JSONResponse({'error': 'Choose ecograph or crcsc'}, status_code=400)
+        recording = read_recording() if backend == 'ecograph' else None
+        evaluation = await asyncio.to_thread(query, repositories[backend], 'get_model_evaluation')
+        return JSONResponse({**configuration(), 'provider': 'Nebius Token Factory',
+            'backend': backend, 'backend_catalog': [catalog(b) for b in BACKENDS],
+            'selected_backend': catalog(backend), 'recorded_available': recording is not None,
+            'recorded_utc': recording.get('recorded_utc') if recording else None,
+            'evaluation': evaluation, 'scenarios': scenarios(backend)})
 
     async def health(request):
         return JSONResponse({"status": "ok", "service": "local_research_demo"})
@@ -122,6 +142,13 @@ def create_app(answer=live_answer):
             return JSONResponse({"error": "Invalid JSON"}, status_code=400)
         if not isinstance(body, dict):
             return JSONResponse({"error": "Expected an object"}, status_code=400)
+        backend = body.get('backend', 'ecograph')
+        try:
+            validate_backend(backend)
+        except ValueError:
+            return JSONResponse({'error': 'Choose ecograph or crcsc'}, status_code=400)
+        if body.get('mode') == 'recorded' and backend != 'ecograph':
+            return JSONResponse({'error': 'Recorded walkthroughs belong to ECoGraph. Select Live agent for CRCSC.'}, status_code=400)
         session_id, mode = body.get("session_id"), body.get("mode")
         if not isinstance(session_id, str) or not re.fullmatch(r"[A-Za-z0-9-]{1,64}", session_id):
             return JSONResponse({"error": "Invalid session identifier"}, status_code=400)
@@ -129,7 +156,7 @@ def create_app(answer=live_answer):
             return JSONResponse({"error": "Choose live or recorded mode"}, status_code=400)
         scenario_id = body.get("scenario_id")
         prompt = body.get("prompt", "")
-        scenario = next((s for s in SCENARIOS if s["id"] == scenario_id), None)
+        scenario = next((s for s in scenarios(backend) if s["id"] == scenario_id), None)
         if scenario_id is not None and scenario is None:
             return JSONResponse({"error": "Unknown walkthrough"}, status_code=400)
         if scenario:
@@ -155,8 +182,10 @@ def create_app(answer=live_answer):
         if session_id not in sessions:
             if len(sessions) >= 32:
                 return JSONResponse({"error": "Local session limit reached. Reset an existing conversation or restart the server."}, status_code=503)
-            sessions[session_id] = {"history": [], "lock": asyncio.Lock()}
+            sessions[session_id] = {"history": [], "lock": asyncio.Lock(), "backend": backend}
         session = sessions[session_id]
+        if session['backend'] != backend:
+            return JSONResponse({'error': 'Reset the conversation before changing data backends.'}, status_code=409)
         if session["lock"].locked():
             return JSONResponse({"error": "A turn is already running in this conversation"}, status_code=409)
         await session["lock"].acquire()
@@ -165,16 +194,16 @@ def create_app(answer=live_answer):
             queue = asyncio.Queue()
             async def run():
                 try:
-                    text, history = await answer(prompt.strip(), session["history"], queue.put)
+                    text, history = await answer(prompt.strip(), session["history"], queue.put, backend=backend)
                     session["history"] = history
-                    await queue.put({"type": "answer", "text": text, "mode": "live"})
+                    await queue.put({"type": "answer", "text": text, "mode": "live", "backend": backend})
                 except Exception as error:
                     await queue.put({"type": "error", "message": error_message(error)})
                 finally:
                     await queue.put({"type": "done"})
             task = asyncio.create_task(run())
             try:
-                yield event({"type": "start", "mode": "live"})
+                yield event({"type": "start", "mode": "live", "backend": backend})
                 while True:
                     item = await queue.get()
                     yield event(item)

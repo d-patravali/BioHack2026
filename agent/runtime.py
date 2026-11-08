@@ -6,8 +6,8 @@ from agents import Agent, OpenAIChatCompletionsModel, RunConfig, RunHooks, Runne
 from openai import AsyncOpenAI
 
 from .config import NEBIUS_BASE_URL, Settings
-from .tools import (get_subtypes, get_drug_predictions, get_drug_targets,
-                    get_subtype_genes, get_gene_phenotypes, get_model_evaluation)
+from .tools import tools_for_backend
+from .backends import catalog
 
 
 class DebugHooks(RunHooks):
@@ -31,15 +31,28 @@ def create_client(settings: Settings, **kwargs) -> AsyncOpenAI:
                        timeout=60., max_retries=1, **kwargs)
 
 
-def create_agent(settings: Settings, client: AsyncOpenAI) -> Agent:
+def create_agent(settings: Settings, client: AsyncOpenAI, backend='ecograph') -> Agent:
     # Disable the SDK's separate OpenAI trace exporter as well as per-run tracing.
     set_tracing_disabled(True)
     if str(client.base_url) != NEBIUS_BASE_URL:
         raise ValueError("This application requires the fixed Nebius Token Factory endpoint.")
+    selected = catalog(backend)
+    context_instructions = (
+        "The selected backend is ECoGraph, with GI genomic subtypes and mutation observation frequencies. "
+        "Mutation frequencies enter its model profile; counts alone are not faithful score attributions. "
+        if backend == 'ecograph' else
+        "The selected backend is CRCSC, with expression-defined CMS1, CMS2, CMS3, CMS4. "
+        "Use signed expression weights, higher/lower expression relations and discovery FDR from tools. "
+        "Never describe these as mutation frequencies or gene-level patient counts. "
+        "Cohort discovery/validation sizes are not mutation observations. "
+        "Signed pooling transfers an unsigned disease-association decoder to expression profiles; "
+        "this transfer and drug-action direction are unvalidated. No CMS therapeutic labels were used. "
+        "Do not claim literature review was performed. "
+    )
     return Agent(
         name="Biomedical research agent",
         instructions=(
-            "You are a biomedical knowledge-graph research assistant. "
+            context_instructions + "You are a biomedical knowledge-graph research assistant. "
             "Use get_subtypes to retrieve available disease subtypes; do not invent the catalog. "
             "Quote subtype identifiers exactly as returned. Do not expand abbreviations or add "
             "biological descriptions that are absent from the tool result. "
@@ -50,19 +63,15 @@ def create_agent(settings: Settings, client: AsyncOpenAI) -> Agent:
             "Use get_drug_targets to investigate shared targets and get_subtype_genes for cohort observations. "
             "Use get_gene_phenotypes for explicit phenotype-gene context. It is not used by this trained model "
             "and is not a faithful explanation of a prediction. Empty associations mean unknown, not negative. "
-            "Subtype mutation frequencies DO enter the frequency-weighted model profile. Do not claim "
-            "cohort counts were excluded merely because phenotype edges were excluded. Input frequencies "
-            "alone are not a causal or faithful attribution of a particular drug score. "
             "For reliability, differences between subtypes, or why rankings repeat, inspect get_model_evaluation "
             "and graph evidence before answering. The experiments show popularity outperforms the GNN, "
-            "and molecular-context ablation shows no consistent AP gain. AP is not accuracy or efficacy probability. "
-            "Separate recorded relationships, cohort mutation observations, cached model hypotheses and untested benefit. "
+            "and any context gain must be described using the selected experiment. AP is not accuracy or efficacy probability. "
+            "Separate recorded relationships, subtype observations/expression, cached hypotheses and untested benefit. "
             "Do not invent drug rankings, literature novelty, efficacy claims, or clinical recommendations. "
             "Cite the returned source paths when presenting findings. Keep answers concise; summarize large tied groups."
         ),
         model=OpenAIChatCompletionsModel(model=settings.model, openai_client=client),
-        tools=[get_subtypes, get_drug_predictions, get_drug_targets, get_subtype_genes,
-               get_gene_phenotypes, get_model_evaluation],
+        tools=tools_for_backend(backend),
     )
 
 

@@ -12,7 +12,7 @@ def events(response):
 
 class DemoUITests(unittest.TestCase):
     def test_recording_runs_without_provider(self):
-        async def forbidden(*args):
+        async def forbidden(*args, **kwargs):
             self.fail('Recorded replay must not invoke a provider')
         with patch('ui.server.configuration', return_value={'live_available': False, 'model': 'Not configured'}), TestClient(create_app(forbidden)) as client:
             self.assertEqual(client.get('/').status_code, 200)
@@ -32,7 +32,7 @@ class DemoUITests(unittest.TestCase):
 
     def test_live_session_history_reset_and_safe_errors(self):
         histories = []
-        async def answer(prompt, history, emit):
+        async def answer(prompt, history, emit, backend='ecograph'):
             histories.append(list(history))
             if prompt == 'fail':
                 raise RuntimeError('secret-should-never-appear')

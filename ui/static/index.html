@@ -9,14 +9,15 @@
 <body>
   <aside class="sidebar">
     <a class="brand" href="/" aria-label="Team Rocket home"><span class="brand-mark">◎</span><span>Team Rocket<small>BIOHACK 2026</small></span></a>
-    <div class="sidebar-section"><span class="eyebrow">RESEARCH WORKSPACE</span><div class="workspace"><span class="workspace-icon">↗</span><div>Colorectal cancer<small>Four molecular subtypes</small></div></div></div>
+    <div class="sidebar-section backend-section"><label class="eyebrow" for="backend">DATA BACKEND</label><select id="backend" disabled><option value="ecograph">ECoGraph · GI genomic (original)</option><option value="crcsc">CRCSC · CMS expression</option></select><p class="sidebar-hint" id="backend-hint">Recorded walkthroughs use ECoGraph. Switch to Live agent to choose CRCSC.</p></div>
+    <div class="sidebar-section"><span class="eyebrow">RESEARCH WORKSPACE</span><div class="workspace"><span class="workspace-icon">↗</span><div>Colorectal cancer<small id="subtype-label">GI.CIN · GI.HM-indel · GI.HM-SNV · GI.GS</small></div></div></div>
     <div class="sidebar-section"><label class="eyebrow" for="mode-recorded">DEMONSTRATION MODE</label>
       <div class="mode-switch"><button id="mode-recorded" class="selected" aria-pressed="true">Recorded</button><button id="mode-live" aria-pressed="false">Live agent</button></div>
       <p id="mode-description" class="sidebar-hint">Replay a verified tool trace. No network needed.</p>
     </div>
     <div class="sidebar-section"><span class="eyebrow">GUIDED INVESTIGATIONS</span>
-      <button class="walkthrough" data-scenario="candidate_audit"><span class="step-number">01</span><span>Why do these drugs tie?<small>Inspect candidates, targets & controls</small></span><span class="arrow">↗</span></button>
-      <button class="walkthrough" data-scenario="phenotype_gene_evidence"><span class="step-number">02</span><span>Trace phenotype evidence<small>Connect APC observations & annotations</small></span><span class="arrow">↗</span></button>
+      <button class="walkthrough" data-scenario="candidate_audit"><span class="step-number">01</span><span><span class="scenario-title">Why do these drugs tie?</span><small>Inspect candidates, targets & controls</small></span><span class="arrow">↗</span></button>
+      <button class="walkthrough" data-scenario="phenotype_gene_evidence"><span class="step-number">02</span><span><span class="scenario-title">Trace phenotype evidence</span><small>Connect APC observations & annotations</small></span><span class="arrow">↗</span></button>
     </div>
     <div class="sidebar-bottom"><span class="status-dot"></span> Local research prototype<p>Cached model results.<br>Source-grounded investigation.<br>No clinical recommendations.</p></div>
   </aside>
@@ -28,7 +29,7 @@
       <section class="metrics" aria-label="Reviewed experiment snapshot">
         <div class="metric-label"><span class="mini-icon">▥</span><div>Reviewed experiment<small>Held-out indication-recovery AP</small></div></div>
         <div class="metric"><span>Drug popularity</span><strong id="popularity">—</strong><small>Reference baseline</small></div>
-        <div class="metric"><span>Target-only GNN</span><strong id="gnn">—</strong><small>Three-seed mean</small></div>
+        <div class="metric"><span id="gnn-label">Target-only GNN</span><strong id="gnn">—</strong><small>Three-seed mean</small></div>
         <div class="metric"><span>Drug-only ablation</span><strong id="ablation">—</strong><small>No disease molecular context</small></div>
         <div class="metric-footnote">AP measures sampled ranking quality, not treatment accuracy. <span>Higher is better.</span></div>
       </section>
@@ -37,7 +38,7 @@
         <div class="conversation-panel">
           <div class="panel-heading"><div><span class="panel-dot"></span> Research conversation</div><span id="connection-status">Offline replay ready</span></div>
           <div id="messages" class="messages" aria-live="polite">
-            <div id="empty-state" class="empty-state"><span class="empty-symbol">⌘</span><h2>A ranking is the start of a question.</h2><p>Choose an investigation to watch the agent inspect<br>graph evidence and challenge its own model’s output.</p><div class="starter-row"><button data-scenario="candidate_audit">Investigate a 29-drug tie <span>↗</span></button><button data-scenario="phenotype_gene_evidence">Explore APC evidence <span>↗</span></button></div></div>
+            <div id="empty-state" class="empty-state"><span class="empty-symbol">⌘</span><h2>A ranking is the start of a question.</h2><p>Choose an investigation to watch the agent inspect<br>graph evidence and challenge its own model’s output.</p><div class="starter-row"><button data-scenario="candidate_audit"><span class="scenario-title">Investigate a 29-drug tie</span> <span>↗</span></button><button data-scenario="phenotype_gene_evidence"><span class="scenario-title">Explore APC evidence</span> <span>↗</span></button></div></div>
           </div>
           <form id="chat-form" class="composer"><label class="sr-only" for="prompt">Research question</label><div class="input-row"><textarea id="prompt" rows="2" maxlength="4000" placeholder="Choose a recorded investigation, or switch to Live agent…" disabled></textarea><button id="send" type="submit" disabled aria-label="Send research question">↑</button></div><div class="composer-note"><span id="composer-mode">Recorded trace · no new agent or GNN inference</span><span>Evidence before conclusions</span></div></form>
         </div>
