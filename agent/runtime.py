@@ -6,7 +6,8 @@ from agents import Agent, OpenAIChatCompletionsModel, RunConfig, RunHooks, Runne
 from openai import AsyncOpenAI
 
 from .config import NEBIUS_BASE_URL, Settings
-from .tools import get_subtypes
+from .tools import (get_subtypes, get_drug_predictions, get_drug_targets,
+                    get_subtype_genes, get_gene_phenotypes, get_model_evaluation)
 
 
 class DebugHooks(RunHooks):
@@ -43,17 +44,30 @@ def create_agent(settings: Settings, client: AsyncOpenAI) -> Agent:
             "Quote subtype identifiers exactly as returned. Do not expand abbreviations or add "
             "biological descriptions that are absent from the tool result. "
             "Map natural-language 'colorectal cancer' to colorectal_cancer. "
-            "Report unsupported diseases honestly. Only subtype listing is implemented. "
-            "GNN predictions, prediction comparisons, and molecular graph queries are not connected. "
-            "Do not invent drug rankings, tool results, efficacy claims, or clinical recommendations."
+            "Report unsupported diseases and missing backends honestly. Use tools for factual graph or model claims. "
+            "get_drug_predictions reads CACHED experiments; never say you ran/trained a GNN or made fresh inference. "
+            "Retain all cutoff ties; do not call the first arbitrarily ordered compound the best drug. "
+            "Use get_drug_targets to investigate shared targets and get_subtype_genes for cohort observations. "
+            "Use get_gene_phenotypes for explicit phenotype-gene context. It is not used by this trained model "
+            "and is not a faithful explanation of a prediction. Empty associations mean unknown, not negative. "
+            "Subtype mutation frequencies DO enter the frequency-weighted model profile. Do not claim "
+            "cohort counts were excluded merely because phenotype edges were excluded. Input frequencies "
+            "alone are not a causal or faithful attribution of a particular drug score. "
+            "For reliability, differences between subtypes, or why rankings repeat, inspect get_model_evaluation "
+            "and graph evidence before answering. The experiments show popularity outperforms the GNN, "
+            "and molecular-context ablation shows no consistent AP gain. AP is not accuracy or efficacy probability. "
+            "Separate recorded relationships, cohort mutation observations, cached model hypotheses and untested benefit. "
+            "Do not invent drug rankings, literature novelty, efficacy claims, or clinical recommendations. "
+            "Cite the returned source paths when presenting findings. Keep answers concise; summarize large tied groups."
         ),
         model=OpenAIChatCompletionsModel(model=settings.model, openai_client=client),
-        tools=[get_subtypes],
+        tools=[get_subtypes, get_drug_predictions, get_drug_targets, get_subtype_genes,
+               get_gene_phenotypes, get_model_evaluation],
     )
 
 
 async def run_turn(agent: Agent, history: list, prompt: str, hooks: DebugHooks):
     """Return updated history only after a successful, bounded SDK run."""
     return await Runner.run(agent, input=[*history, {"role": "user", "content": prompt}],
-                            hooks=hooks, max_turns=6,
+                            hooks=hooks, max_turns=10,
                             run_config=RunConfig(tracing_disabled=True))

@@ -3,6 +3,12 @@ __pycache__/
 .venv/
 kg.csv
 data/processed/
+data/raw/
+data/external/
+artifacts/predictions/
+artifacts/checkpoints/
+**/.ipynb_checkpoints/
+*.part
 .env
 .env.*
 !.env.example

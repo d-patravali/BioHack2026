@@ -11,7 +11,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-OUT = Path("reports/inference")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+OUT = PROJECT_ROOT / "reports/inference"
 SEEDS = (17, 29, 43)
 SELECT = {
     "phenotype_protein", "disease_protein", "disease_phenotype_positive",
@@ -41,7 +42,7 @@ def expected_metrics(scores, target, excluded, harmonic):
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    nodes = pd.read_csv("data/processed/nodes.csv", dtype={"id": "string"},
+    nodes = pd.read_csv(PROJECT_ROOT / "data/processed/primekg/nodes.csv", dtype={"id": "string"},
                         keep_default_na=False).set_index("index")
     # Canonicalize exact external-ID aliases before splitting and scoring.
     canonical = nodes.reset_index().groupby(["type", "source", "id"])["index"].transform("min")
@@ -50,11 +51,11 @@ def main():
     types = nodes.type.to_dict()
     pieces, inventory = [], Counter()
     columns = ["x_index", "y_index", "relation", "display_relation", "x_type", "y_type"]
-    for chunk in pd.read_csv("kg.csv", usecols=columns, keep_default_na=False, chunksize=250_000):
+    for chunk in pd.read_csv(PROJECT_ROOT / "data/raw/primekg/kg.csv", usecols=columns, keep_default_na=False, chunksize=250_000):
         inventory.update(chunk.groupby(["relation", "display_relation", "x_type", "y_type"]).size().to_dict())
         pieces.append(chunk[chunk.relation.isin(SELECT)].copy())
     raw = pd.concat(pieces, ignore_index=True)
-    old = pd.read_csv("reports/relationships.csv", keep_default_na=False)
+    old = pd.read_csv(PROJECT_ROOT / "reports/primekg/relationships.csv", keep_default_na=False)
     assert inventory == Counter({tuple(r[:4]): r[4] for r in old.itertuples(index=False, name=None)})
     assert raw.x_type.eq(raw.x_index.map(types)).all()
     assert raw.y_type.eq(raw.y_index.map(types)).all()
@@ -77,7 +78,7 @@ def main():
     dn = pairs("disease_phenotype_negative", "disease", "effect/phenotype")
     ppi = pairs("protein_protein", "gene/protein", "gene/protein")
     pathway = pairs("pathway_protein", "gene/protein", "pathway")
-    processed = pd.read_csv("data/processed/phenotype_disease_gene_edges.csv")
+    processed = pd.read_csv(PROJECT_ROOT / "data/processed/primekg/phenotype_disease_gene_edges.csv")
     prior = processed[processed.relation.eq("phenotype_protein")]
     assert gp == {(mapping[x], mapping[y]) if types[x] == "gene/protein" else
                   (mapping[y], mapping[x]) for x, y in zip(prior.x_index, prior.y_index)}
@@ -214,7 +215,7 @@ def main():
     pd.DataFrame(splits).to_csv(OUT / "test_splits.csv", index=False)
     pd.DataFrame(audits).to_csv(OUT / "split_audit.csv", index=False)
     digest = hashlib.sha256()
-    with open("kg.csv", "rb") as handle:
+    with open(PROJECT_ROOT / "data/raw/primekg/kg.csv", "rb") as handle:
         for block in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(block)
     summary.update({"raw_sha256": digest.hexdigest(), "seeds": SEEDS,

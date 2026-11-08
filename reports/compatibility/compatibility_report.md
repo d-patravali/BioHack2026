@@ -8,7 +8,7 @@ The conditional verdict means: repair/validate the sample–gene export, remove 
 
 ## Research question and inputs
 
-Can GI.CIN, GI.HM-indel, GI.HM-SNV, and GI.GS molecular observations be linked to PrimeKG for downstream drug–subtype hypothesis generation? This assessment separates technical compatibility, molecular associations, target connectivity, therapeutic supervision, and efficacy. Inputs are `kg.csv` and `ECoGraph/data/neptune_csv/` relative to the project root. `source_inspection.txt` records headers and example records; `source_manifest.json` records sizes and SHA-256 digests.
+Can GI.CIN, GI.HM-indel, GI.HM-SNV, and GI.GS molecular observations be linked to PrimeKG for downstream drug–subtype hypothesis generation? This assessment separates technical compatibility, molecular associations, target connectivity, therapeutic supervision, and efficacy. Inputs are `data/raw/primekg/kg.csv` and `ECoGraph/data/neptune_csv/` relative to the project root. `source_inspection.txt` records headers and example records; `source_manifest.json` records sizes and SHA-256 digests.
 
 ### ECoGraph export structure and integrity
 
@@ -177,4 +177,4 @@ Gene matches can bridge subtype observations into a drug-containing molecular gr
 
 ## Reproduction and scope
 
-Run `python3 analysis/run_compatibility.py` from the project root. `analysis/README.md` documents dependencies and optional suppression of supplementary recovery. The script never modifies datasets or existing preprocessing outputs. PrimeKG is processed in chunks with only relevant drug edges retained; no second full edge list or merged graph is saved. All original mandatory inputs are SHA-256 checked before and after execution. `analysis/results/README.md` indexes artifacts. Statistical screening results are supplementary, and no drugs are recommended as treatments.
+Run `python3 analysis/run_compatibility.py` from the project root. `analysis/README.md` documents dependencies and optional suppression of supplementary recovery. The script never modifies datasets or existing preprocessing outputs. PrimeKG is processed in chunks with only relevant drug edges retained; no second full edge list or merged graph is saved. All original mandatory inputs are SHA-256 checked before and after execution. `reports/compatibility/README.md` indexes artifacts. Statistical screening results are supplementary, and no drugs are recommended as treatments.

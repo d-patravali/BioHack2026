@@ -1,10 +1,12 @@
 import tempfile
 import unittest
+import sys
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "analysis"))
 from compatibility import bh, compare_sets, map_genes, pathway_audit, exploratory_enrichment, SUBTYPES
 
 

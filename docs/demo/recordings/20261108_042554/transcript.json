@@ -1,0 +1,748 @@
+{
+  "recorded_utc": "2026-11-08T04:25:56.214630+00:00",
+  "provider": "Nebius Token Factory",
+  "model": "zai-org/GLM-5.3-Flash",
+  "endpoint": "https://api.tokenfactory.nebius.com/v1/chat/completions",
+  "gnn_backend": "cached experiment, not fresh GNN inference",
+  "scenarios": [
+    {
+      "id": "candidate_audit",
+      "title": "Investigate the tied GI.CIN candidate group",
+      "prompt": "Investigate the cached leading candidates for GI.CIN. Retrieve the top five, inspect a shared drug target, check its recorded phenotype associations and whether it is in the retained GI.CIN positive-mutation profile, and inspect the popularity and molecular-context ablation evaluation. Use the tools. Summarize what we can actually conclude in at most 180 words, with source paths.",
+      "events": [
+        {
+          "event": "tool_call",
+          "tool": "get_subtypes",
+          "call_id": "call_933e71dfd3634dfab4b3ea3b",
+          "arguments": {
+            "disease": "colorectal_cancer"
+          }
+        },
+        {
+          "event": "tool_call",
+          "tool": "get_drug_predictions",
+          "call_id": "call_8598bf91950743b285902aea",
+          "arguments": {
+            "subtype": "GI.CIN",
+            "top_k": 5
+          }
+        },
+        {
+          "event": "tool_call",
+          "tool": "get_model_evaluation",
+          "call_id": "call_9a8d5412e4ab4c26ab119616",
+          "arguments": {}
+        },
+        {
+          "event": "tool_result",
+          "tool": "get_subtypes",
+          "call_id": "call_933e71dfd3634dfab4b3ea3b",
+          "result": {
+            "status": "ok",
+            "disease": "colorectal_cancer",
+            "subtypes": [
+              "GI.CIN",
+              "GI.HM-indel",
+              "GI.HM-SNV",
+              "GI.GS"
+            ],
+            "source": "Local ECoGraph subtype catalog; cached GNN experiments available, no fresh inference"
+          }
+        },
+        {
+          "event": "tool_result",
+          "tool": "get_model_evaluation",
+          "call_id": "call_9a8d5412e4ab4c26ab119616",
+          "result": {
+            "status": "ok",
+            "run_id": "20261108_034016",
+            "source": "reports/crc_experiments/20261108_034016/evaluation_metrics.csv",
+            "task": "held-out PrimeKG indication recovery against sampled unknown pairs",
+            "test_known_indications": 853,
+            "test_unknown_pairs": 853,
+            "metric": "average precision; not prediction accuracy or probability of efficacy",
+            "conditions": {
+              "drug_popularity": {
+                "runs": 1,
+                "mean_test_ap": 0.8941222954578794,
+                "min_test_ap": 0.8941222954578794,
+                "max_test_ap": 0.8941222954578794
+              },
+              "legacy_all_roles": {
+                "runs": 1,
+                "mean_test_ap": 0.8190277733864988,
+                "min_test_ap": 0.8190277733864988,
+                "max_test_ap": 0.8190277733864988
+              },
+              "target_only": {
+                "runs": 3,
+                "mean_test_ap": 0.8254425264618662,
+                "min_test_ap": 0.8158056043129326,
+                "max_test_ap": 0.8336790058853346
+              },
+              "drug_only": {
+                "runs": 3,
+                "mean_test_ap": 0.8257185479015064,
+                "min_test_ap": 0.8201505605697909,
+                "max_test_ap": 0.8314138221078844
+              },
+              "no_ppi": {
+                "runs": 1,
+                "mean_test_ap": 0.8125160547078826,
+                "min_test_ap": 0.8125160547078826,
+                "max_test_ap": 0.8125160547078826
+              }
+            },
+            "selected_cached_model": {
+              "condition": "target_only",
+              "seed": 42,
+              "test_ap": 0.8158056043129326
+            },
+            "interpretation": "Popularity outperformed the tested GNNs; molecular context gave no consistent AP gain over the drug-only ablation.",
+            "subtype_efficacy_evaluated": false,
+            "model_uses_phenotype_edges": false
+          }
+        },
+        {
+          "event": "tool_result",
+          "tool": "get_drug_predictions",
+          "call_id": "call_8598bf91950743b285902aea",
+          "result": {
+            "status": "ok",
+            "subtype": "GI.CIN",
+            "backend": "cached_gnn_experiment",
+            "fresh_inference": false,
+            "run_id": "20261108_034016",
+            "model_condition": "target_only",
+            "seed": 42,
+            "profile": "frequency",
+            "source": "reports/crc_experiments/20261108_034016/tie_aware_top_candidates.csv",
+            "requested_top_k": 5,
+            "returned_count": 29,
+            "ties_included": true,
+            "predictions": [
+              {
+                "drug_id": "DB00180",
+                "drug_name": "Flunisolide",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00223",
+                "drug_name": "Diflorasone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00240",
+                "drug_name": "Alclometasone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00253",
+                "drug_name": "Medrysone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00324",
+                "drug_name": "Fluorometholone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00394",
+                "drug_name": "Beclomethasone dipropionate",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00443",
+                "drug_name": "Betamethasone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00547",
+                "drug_name": "Desoximetasone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00596",
+                "drug_name": "Ulobetasol",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00620",
+                "drug_name": "Triamcinolone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00635",
+                "drug_name": "Prednisone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00663",
+                "drug_name": "Flumethasone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00769",
+                "drug_name": "Hydrocortamate",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00838",
+                "drug_name": "Clocortolone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00846",
+                "drug_name": "Flurandrenolide",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00860",
+                "drug_name": "Prednisolone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB00896",
+                "drug_name": "Rimexolone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB01130",
+                "drug_name": "Prednicarbate",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB01260",
+                "drug_name": "Desonide",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB01380",
+                "drug_name": "Cortisone acetate",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB01384",
+                "drug_name": "Paramethasone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB01410",
+                "drug_name": "Ciclesonide",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB05423",
+                "drug_name": "ORG-34517",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB06781",
+                "drug_name": "Difluprednate",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB11921",
+                "drug_name": "Deflazacort",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB13003",
+                "drug_name": "Cortivazol",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB13158",
+                "drug_name": "Clobetasone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB14596",
+                "drug_name": "Loteprednol etabonate",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              },
+              {
+                "drug_id": "DB15566",
+                "drug_name": "Prednisolone acetate",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 3.624150276184082,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "recorded_indication_for_crc_lexical_candidate": false
+              }
+            ],
+            "warning": "All candidates tied at the cutoff are returned, possibly more than top_k. Within-tie compound ordering is unresolved. Raw logits are not efficacy probabilities; graph nonmembership is not literature novelty.",
+            "evaluation": {
+              "status": "ok",
+              "run_id": "20261108_034016",
+              "source": "reports/crc_experiments/20261108_034016/evaluation_metrics.csv",
+              "task": "held-out PrimeKG indication recovery against sampled unknown pairs",
+              "test_known_indications": 853,
+              "test_unknown_pairs": 853,
+              "metric": "average precision; not prediction accuracy or probability of efficacy",
+              "conditions": {
+                "drug_popularity": {
+                  "runs": 1,
+                  "mean_test_ap": 0.8941222954578794,
+                  "min_test_ap": 0.8941222954578794,
+                  "max_test_ap": 0.8941222954578794
+                },
+                "legacy_all_roles": {
+                  "runs": 1,
+                  "mean_test_ap": 0.8190277733864988,
+                  "min_test_ap": 0.8190277733864988,
+                  "max_test_ap": 0.8190277733864988
+                },
+                "target_only": {
+                  "runs": 3,
+                  "mean_test_ap": 0.8254425264618662,
+                  "min_test_ap": 0.8158056043129326,
+                  "max_test_ap": 0.8336790058853346
+                },
+                "drug_only": {
+                  "runs": 3,
+                  "mean_test_ap": 0.8257185479015064,
+                  "min_test_ap": 0.8201505605697909,
+                  "max_test_ap": 0.8314138221078844
+                },
+                "no_ppi": {
+                  "runs": 1,
+                  "mean_test_ap": 0.8125160547078826,
+                  "min_test_ap": 0.8125160547078826,
+                  "max_test_ap": 0.8125160547078826
+                }
+              },
+              "selected_cached_model": {
+                "condition": "target_only",
+                "seed": 42,
+                "test_ap": 0.8158056043129326
+              },
+              "interpretation": "Popularity outperformed the tested GNNs; molecular context gave no consistent AP gain over the drug-only ablation.",
+              "subtype_efficacy_evaluated": false,
+              "model_uses_phenotype_edges": false
+            }
+          }
+        },
+        {
+          "event": "tool_call",
+          "tool": "get_drug_targets",
+          "call_id": "call_b2f9c51643ce4bdd8e99c878",
+          "arguments": {
+            "drug_id": "DB00596"
+          }
+        },
+        {
+          "event": "tool_call",
+          "tool": "get_gene_phenotypes",
+          "call_id": "call_9112adbf76cf4b998de0ac9f",
+          "arguments": {
+            "gene": "2908",
+            "limit": 10
+          }
+        },
+        {
+          "event": "tool_call",
+          "tool": "get_subtype_genes",
+          "call_id": "call_216fbb708485477fae23f2a8",
+          "arguments": {
+            "gene": "2908",
+            "limit": 20,
+            "subtype": "GI.CIN"
+          }
+        },
+        {
+          "event": "tool_result",
+          "tool": "get_drug_targets",
+          "call_id": "call_b2f9c51643ce4bdd8e99c878",
+          "result": {
+            "status": "ok",
+            "drug_id": "DB00596",
+            "drug_name": "Ulobetasol",
+            "relationship": {
+              "relation": "drug_protein",
+              "display_relation": "target"
+            },
+            "targets": [
+              {
+                "gene_id": "2908",
+                "namespace": "NCBI",
+                "symbols": [
+                  "NR3C1"
+                ],
+                "node_indices": [
+                  509
+                ]
+              }
+            ],
+            "target_count": 1,
+            "source": "reports/compatibility/primekg_direct_targets.csv",
+            "evidence_type": "recorded_direct_graph_relationship",
+            "warning": "Excludes enzymes/carriers/transporters. Action direction, subtype benefit and clinical efficacy are not established."
+          }
+        },
+        {
+          "event": "tool_result",
+          "tool": "get_gene_phenotypes",
+          "call_id": "call_9112adbf76cf4b998de0ac9f",
+          "result": {
+            "status": "ok",
+            "gene_id": "2908",
+            "namespace": "NCBI",
+            "symbols": [
+              "NR3C1"
+            ],
+            "phenotype_count": 0,
+            "phenotypes": [],
+            "returned_count": 0,
+            "truncated": false,
+            "relation": "phenotype_protein",
+            "evidence_type": "recorded_direct_association",
+            "source": "data/processed/primekg/phenotype_disease_gene_edges.csv",
+            "model_uses_phenotype_edges": false,
+            "warning": "Retrieved graph context, not a model explanation or causal/clinical validation. No recorded association means unknown, not a negative finding."
+          }
+        },
+        {
+          "event": "tool_result",
+          "tool": "get_subtype_genes",
+          "call_id": "call_216fbb708485477fae23f2a8",
+          "result": {
+            "status": "ok",
+            "subtype": "GI.CIN",
+            "genes": [],
+            "total_genes": 9763,
+            "gene_filter": "2908",
+            "matching_genes": 0,
+            "returned_count": 0,
+            "truncated": false,
+            "profile": "frequency",
+            "source": "reports/crc_experiments/20261108_034016/profile_gene_evidence.csv.gz",
+            "evidence_type": "cohort_observation_not_validated_enrichment",
+            "warning": "Observed flags are not driver, dependency or therapeutic-effect labels. Cohort sizes/burdens differ. No match means absent from the retained positive profile, not proof of biological absence."
+          }
+        }
+      ],
+      "tool_checks": {
+        "all_returned_tools_ok": true,
+        "cached_prediction_tool_executed": true,
+        "complete_29_drug_tie_returned": true,
+        "nr3c1_target_retrieved": true,
+        "nr3c1_missing_direct_phenotypes_retrieved": true,
+        "nr3c1_retained_profile_checked": true,
+        "baseline_and_ablation_available": true
+      },
+      "answer": "**Findings (all from cached run 20261108_034016):**\n\n**Candidates:** The GI.CIN \"top five\" is not five distinct drugs — it is one 29-way tie at rank 1 (raw_logit 3.624, e.g., Flunisolide, Diflorasone, Ulobetasol, Prednisolone, Triamcinolone; source: `reports/crc_experiments/20261108_034016/tie_aware_top_candidates.csv`). Within-tie ordering is unresolved; none is \"the best.\"\n\n**Shared target:** All 29 share recorded target NR3C1 (NCBI 2908), per `reports/compatibility/primekg_direct_targets.csv` — a direct graph relationship only; action direction and subtype benefit are not established.\n\n**Phenotype associations:** Zero recorded NR3C1 phenotype associations — unknown, not negative (`data/processed/primekg/phenotype_disease_gene_edges.csv`). The model does not use phenotype edges.\n\n**GI.CIN profile:** NR3C1 is absent from the retained positive-mutation profile (9,763 genes; `reports/crc_experiments/20261108_034016/profile_gene_evidence.csv.gz`).\n\n**Evaluation:** Popularity beat the GNNs (AP 0.894 vs. target_only mean 0.825, drug_only 0.826, no_ppi 0.813); molecular context showed no consistent AP gain (`evaluation_metrics.csv`). AP is not accuracy or efficacy.\n\n**Conclusion:** No validated GI.CIN therapeutic claim is supportable from these cached data."
+    },
+    {
+      "id": "phenotype_gene_evidence",
+      "title": "Inspect APC phenotype–genotype evidence",
+      "prompt": "Now retrieve the three most frequent observed genes for GI.CIN and look up all recorded direct phenotype associations for APC (NCBI324). Use tools. Report APC's observed/profiled patient counts, separate cohort observations from graph associations, and state whether the CRC GNN used these phenotype edges. Do not imply that these annotations explain the drug ranking. Summarize in at most 180 words, with source paths.",
+      "events": [
+        {
+          "event": "tool_call",
+          "tool": "get_subtype_genes",
+          "call_id": "call_ae329669ca3149b089071c27",
+          "arguments": {
+            "gene": "",
+            "limit": 3,
+            "subtype": "GI.CIN"
+          }
+        },
+        {
+          "event": "tool_call",
+          "tool": "get_gene_phenotypes",
+          "call_id": "call_add1de2703e6451ea182f0ba",
+          "arguments": {
+            "gene": "324",
+            "limit": 50
+          }
+        },
+        {
+          "event": "tool_result",
+          "tool": "get_gene_phenotypes",
+          "call_id": "call_add1de2703e6451ea182f0ba",
+          "result": {
+            "status": "ok",
+            "gene_id": "324",
+            "namespace": "NCBI",
+            "symbols": [
+              "APC"
+            ],
+            "phenotype_count": 4,
+            "phenotypes": [
+              {
+                "id": "2239",
+                "namespace": "HPO",
+                "name": "Gastrointestinal hemorrhage",
+                "node_index": 23079
+              },
+              {
+                "id": "2573",
+                "namespace": "HPO",
+                "name": "Hematochezia",
+                "node_index": 84355
+              },
+              {
+                "id": "1974",
+                "namespace": "HPO",
+                "name": "Leukocytosis",
+                "node_index": 22923
+              },
+              {
+                "id": "1744",
+                "namespace": "HPO",
+                "name": "Splenomegaly",
+                "node_index": 24143
+              }
+            ],
+            "returned_count": 4,
+            "truncated": false,
+            "relation": "phenotype_protein",
+            "evidence_type": "recorded_direct_association",
+            "source": "data/processed/primekg/phenotype_disease_gene_edges.csv",
+            "model_uses_phenotype_edges": false,
+            "warning": "Retrieved graph context, not a model explanation or causal/clinical validation. No recorded association means unknown, not a negative finding."
+          }
+        },
+        {
+          "event": "tool_result",
+          "tool": "get_subtype_genes",
+          "call_id": "call_ae329669ca3149b089071c27",
+          "result": {
+            "status": "ok",
+            "subtype": "GI.CIN",
+            "genes": [
+              {
+                "gene_id": "324",
+                "namespace": "NCBI",
+                "symbol": "APC",
+                "gene_node_index": 2037,
+                "observed_samples": 185,
+                "profiled_samples": 224,
+                "frequency": 0.8258928571428571,
+                "pooling_weight": 0.008113323392684852
+              },
+              {
+                "gene_id": "7157",
+                "namespace": "NCBI",
+                "symbol": "TP53",
+                "gene_node_index": 1785,
+                "observed_samples": 170,
+                "profiled_samples": 224,
+                "frequency": 0.7589285714285714,
+                "pooling_weight": 0.00745548636084554
+              },
+              {
+                "gene_id": "3845",
+                "namespace": "NCBI",
+                "symbol": "KRAS",
+                "gene_node_index": 2621,
+                "observed_samples": 97,
+                "profiled_samples": 224,
+                "frequency": 0.4330357142857143,
+                "pooling_weight": 0.00425401280589422
+              }
+            ],
+            "total_genes": 9763,
+            "gene_filter": "",
+            "matching_genes": 9763,
+            "returned_count": 3,
+            "truncated": true,
+            "profile": "frequency",
+            "source": "reports/crc_experiments/20261108_034016/profile_gene_evidence.csv.gz",
+            "evidence_type": "cohort_observation_not_validated_enrichment",
+            "warning": "Observed flags are not driver, dependency or therapeutic-effect labels. Cohort sizes/burdens differ. No match means absent from the retained positive profile, not proof of biological absence."
+          }
+        }
+      ],
+      "tool_checks": {
+        "all_returned_tools_ok": true,
+        "subtype_gene_tool_executed": true,
+        "apc_counts_retrieved": true,
+        "apc_four_direct_phenotypes_retrieved": true,
+        "phenotype_model_boundary_available": true
+      },
+      "answer": "**Top-3 GI.CIN observed genes** (`reports/crc_experiments/20261108_034016/profile_gene_evidence.csv.gz`, frequency profile, 9,763 genes):\n\n1. **APC** (NCBI 324): 185 observed of 224 profiled samples, frequency 0.826\n2. **TP53** (7157): 170/224, 0.759\n3. **KRAS** (3845): 97/224, 0.433\n\nThese are cohort mutation observations — flags, not driver/dependency/therapeutic-effect labels; cohorts differ in size and burden.\n\n**APC phenotype associations** (`data/processed/primekg/phenotype_disease_gene_edges.csv`): 4 recorded direct HPO associations — Gastrointestinal hemorrhage, Hematochezia, Leukocytosis, Splenomegaly. These are graph context only, not causal/clinical validation and not a model explanation.\n\n**Separation:** Cohort counts (above) are subtype-specific mutation observations; the HPO edges are PrimeKG gene–phenotype annotations in the graph. They are distinct evidence types.\n\n**GNN usage:** The CRC GNN did **not** use phenotype edges (`model_uses_phenotype_edges: False`), so neither APC's profile counts nor its HPO associations explain the tied drug ranking from the prior turn.\n\n**Conclusion:** APC is the most frequently observed GI.CIN gene (185/224); its recorded phenotype annotations are context, not ranking evidence."
+    }
+  ],
+  "source_sha256": {
+    "data/processed/primekg/nodes.csv": "1b0a1999e5153ecac45d24fc619d0b7f6750eb6bba247e6339979371c365500e",
+    "data/processed/primekg/phenotype_disease_gene_edges.csv": "b6fe1b059259aab23b53ab01f8628e55ce475ba6975e5e595001ec8a26225e3f",
+    "reports/compatibility/primekg_direct_targets.csv": "5cb1f41a2780b988df2b0398a41a9082915221227f6b0469e00c7fedc6c5c632",
+    "reports/crc_experiments/20261108_034016/evaluation_metrics.csv": "e760e753f8b1a7896af42afa9d446e6bca944f4546dbf5e9fc5621732be36b53",
+    "reports/crc_experiments/20261108_034016/tie_aware_top_candidates.csv": "c070bb7e94559f70c582df1ef606d3f8b783cdbe6920db7024ae491aa259c1c6",
+    "reports/crc_experiments/20261108_034016/profile_gene_evidence.csv.gz": "3952c7597e8033a9abedf085ab6003363faf0a2b57c67ac80122cb4844ac982b"
+  },
+  "source_hashes_unchanged": true,
+  "all_tool_checks_passed": true
+}

@@ -1,0 +1,12 @@
+{
+  "protected_files_checked": 64,
+  "all_original_hashes_unchanged": true,
+  "fixed_test_positive_pairs": 853,
+  "fixed_test_unknown_pairs": 853,
+  "split_diseases_disjoint": true,
+  "tie_inclusive_candidates_per_profile_subtype_seed": 29,
+  "clinical_efficacy_validated": false,
+  "research_tests_passed": 13,
+  "experiment_script_sha256": "66e96b1f592f0885589a1471a1aa4e91d3824399c7b7d462de06058dd84d4969",
+  "summary_script_sha256": "797e8f739799fdfbcd2b03cd40b2bb8387b0242ea31ddf31d1466654e625c4b9"
+}

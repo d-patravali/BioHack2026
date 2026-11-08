@@ -17,6 +17,7 @@ SUBTYPES = ["GI.CIN", "GI.HM-indel", "GI.HM-SNV", "GI.GS"]
 FILES = ["vertices_gene.csv", "vertices_subtype.csv", "vertices_sample.csv", "vertices_age.csv",
          "edges_has_gene_part001.csv", "edges_has_subtype.csv", "edges_in_pathway.csv", "edges_is_of_age.csv"]
 NODE_FIELDS = ["index", "id", "type", "name", "source"]
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 
 def read_csv(path):
@@ -501,7 +502,7 @@ The conditional verdict means: repair/validate the sample–gene export, remove 
 
 ## Research question and inputs
 
-Can GI.CIN, GI.HM-indel, GI.HM-SNV, and GI.GS molecular observations be linked to PrimeKG for downstream drug–subtype hypothesis generation? This assessment separates technical compatibility, molecular associations, target connectivity, therapeutic supervision, and efficacy. Inputs are `kg.csv` and `ECoGraph/data/neptune_csv/` relative to the project root. `source_inspection.txt` records headers and example records; `source_manifest.json` records sizes and SHA-256 digests.
+Can GI.CIN, GI.HM-indel, GI.HM-SNV, and GI.GS molecular observations be linked to PrimeKG for downstream drug–subtype hypothesis generation? This assessment separates technical compatibility, molecular associations, target connectivity, therapeutic supervision, and efficacy. Inputs are `data/raw/primekg/kg.csv` and `ECoGraph/data/neptune_csv/` relative to the project root. `source_inspection.txt` records headers and example records; `source_manifest.json` records sizes and SHA-256 digests.
 
 ### ECoGraph export structure and integrity
 
@@ -619,16 +620,16 @@ Gene matches can bridge subtype observations into a drug-containing molecular gr
 
 ## Reproduction and scope
 
-Run `python3 analysis/run_compatibility.py` from the project root. `analysis/README.md` documents dependencies and optional suppression of supplementary recovery. The script never modifies datasets or existing preprocessing outputs. PrimeKG is processed in chunks with only relevant drug edges retained; no second full edge list or merged graph is saved. All original mandatory inputs are SHA-256 checked before and after execution. `analysis/results/README.md` indexes artifacts. Statistical screening results are supplementary, and no drugs are recommended as treatments.
+Run `python3 analysis/run_compatibility.py` from the project root. `analysis/README.md` documents dependencies and optional suppression of supplementary recovery. The script never modifies datasets or existing preprocessing outputs. PrimeKG is processed in chunks with only relevant drug edges retained; no second full edge list or merged graph is saved. All original mandatory inputs are SHA-256 checked before and after execution. `reports/compatibility/README.md` indexes artifacts. Statistical screening results are supplementary, and no drugs are recommended as treatments.
 """
     (out / "compatibility_report.md").write_text(report)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--primekg", type=Path, default=Path("kg.csv"))
-    parser.add_argument("--ecograph", type=Path, default=Path("ECoGraph/data/neptune_csv"))
-    parser.add_argument("--output", type=Path, default=Path("analysis/results"))
+    parser.add_argument("--primekg", type=Path, default=PROJECT_ROOT / "data/raw/primekg/kg.csv")
+    parser.add_argument("--ecograph", type=Path, default=PROJECT_ROOT / "ECoGraph/data/neptune_csv")
+    parser.add_argument("--output", type=Path, default=PROJECT_ROOT / "reports/compatibility")
     parser.add_argument("--no-supplementary-recovery", action="store_true")
     args = parser.parse_args()
     out = args.output

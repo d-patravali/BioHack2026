@@ -8,7 +8,7 @@ The hackathon asks: **“How can we prototype agentic frameworks that leverage G
 
 [SHEPHERD](https://pmc.ncbi.nlm.nih.gov/articles/PMC12181314/) already studies rare-disease diagnosis using an enriched knowledge graph, simulated patients, and geometric deep learning. It is relevant prior work, but this experiment neither reproduces nor compares against its patient-level tasks. Our question is narrower: **can indirect biological connections recover explicitly recorded gene–phenotype links when those links are hidden?**
 
-All numerical findings below come from the supplied `kg.csv` and executed experiments. External sources are used only to interpret construction/provenance and prior work. No GNN or agent was trained or implemented.
+All numerical findings below come from the supplied `data/raw/primekg/kg.csv` and executed experiments. External sources are used only to interpret construction/provenance and prior work. No GNN or agent was trained or implemented.
 
 ## 1. What is actually in this CSV?
 
@@ -58,7 +58,7 @@ Other available relations, with raw counts counting both endpoint orders where p
 | Drug context | `drug_drug` 2,672,628; `drug_protein` 51,306; `drug_effect` 129,568; `indication` 18,776; `contraindication` 61,350; `off-label use` 5,136 |
 | Exposure context | `exposure_bioprocess` 3,250; `exposure_cellcomp` 20; `exposure_disease` 4,608; `exposure_molfunc` 90; `exposure_protein` 2,424 |
 
-`drug_protein` has distinct display labels (`target`, `enzyme`, `carrier`, `transporter`); retaining only `relation` would discard those distinctions. Full typed counts are in `reports/relationships.csv`. PPI, pathways, GO functions/processes, and tissue expression offer molecular context beyond phenotype matching. Whether each helps is an experimental question; only PPI and pathway transfer were tested here.
+`drug_protein` has distinct display labels (`target`, `enzyme`, `carrier`, `transporter`); retaining only `relation` would discard those distinctions. Full typed counts are in `reports/primekg/relationships.csv`. PPI, pathways, GO functions/processes, and tissue expression offer molecular context beyond phenotype matching. Whether each helps is an experimental question; only PPI and pathway transfer were tested here.
 
 ## 2. Direct annotations are present, but very sparse
 
@@ -176,9 +176,9 @@ Run from the repository root with the existing requirements installed:
 ```sh
 python3 scripts/prepare_primekg.py   # only needed if processed tables are absent/stale
 python3 scripts/explore_inference.py
-python3 -m unittest discover -s tests
+python3 -m unittest discover -s tests/research -p 'test_*.py'
 ```
 
-The analysis reuses `data/processed/nodes.csv` and the existing core extraction, rescans `kg.csv` for relation verification and pathway context, and checks target consistency. It reads raw data without modifying it. It uses pandas/NumPy, no graph framework, negative sampling, dense all-pairs graph, GNN, or LLM. Context and candidate vectors fit in memory; the raw CSV is read in chunks.
+The analysis reuses `data/processed/primekg/nodes.csv` and the existing core extraction, rescans `data/raw/primekg/kg.csv` for relation verification and pathway context, and checks target consistency. It reads raw data without modifying it. It uses pandas/NumPy, no graph framework, negative sampling, dense all-pairs graph, GNN, or LLM. Context and candidate vectors fit in memory; the raw CSV is read in chunks.
 
 Small outputs are in `reports/inference/`: `coverage_summary.json`, `gene_coverage.csv`, `examples.json`, `baseline_metrics.csv`, `baseline_path_strata.csv`, `test_splits.csv`, and `split_audit.csv`. The manifest records test pairs; training pairs are the remaining canonical direct pairs. Versions used: pandas 2.2.2 and NumPy 2.4.4. Four small ranking tests cover filtering, ties, and unique ranks; runtime assertions verify reciprocal pairs, aliases, raw/processed consistency, and train/test separation.

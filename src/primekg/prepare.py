@@ -17,6 +17,7 @@ COLUMNS = ["relation", "display_relation"] + [
     f"{side}_{field}" for side in ("x", "y") for field in NODE_FIELDS
 ]
 CORE_TYPES = {"effect/phenotype", "disease", "gene/protein"}
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 
 def counter_frame(counter, columns, count_name="raw_row_count"):
@@ -114,7 +115,7 @@ def prepare(input_path, output_dir, report_dir, chunksize=250_000):
         f"{len(core_nodes):,} nodes; {core_raw_rows:,} raw rows; {len(edges):,} unique ordered edges.",
         f"Removed {core_raw_rows-len(edges):,} repeated ordered rows; multiplicity is retained in `raw_row_count`.",
         f"{len(paired):,} exported ordered edges have a reverse edge with identical relation labels.",
-        "", "See README.md for semantics, limitations, and construction examples.", ""])
+        "", "See ../../docs/research/primekg_exploration.md for semantics, limitations, and construction examples.", ""])
     (report_dir / "profile.md").write_text("\n".join(lines))
     print(json.dumps(summary, indent=2))
     return summary
@@ -122,9 +123,9 @@ def prepare(input_path, output_dir, report_dir, chunksize=250_000):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--input", type=Path, default=Path("kg.csv"))
-    parser.add_argument("--output-dir", type=Path, default=Path("data/processed"))
-    parser.add_argument("--report-dir", type=Path, default=Path("reports"))
+    parser.add_argument("--input", type=Path, default=PROJECT_ROOT / "data/raw/primekg/kg.csv")
+    parser.add_argument("--output-dir", type=Path, default=PROJECT_ROOT / "data/processed/primekg")
+    parser.add_argument("--report-dir", type=Path, default=PROJECT_ROOT / "reports/primekg")
     parser.add_argument("--chunksize", type=int, default=250_000)
     args = parser.parse_args()
     if args.chunksize <= 0:

@@ -1,0 +1,1045 @@
+seed,profile,subtype,drug_node_index,drug_id,drug_name,tied_rank_min,tie_group_size,raw_logit,recorded_target_ncbi_ids,recorded_indication_for_crc_lexical_candidate,status
+42,uniform_union,subtype:GI.CIN,14014,DB00180,Flunisolide,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14015,DB00240,Alclometasone,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14016,DB00253,Medrysone,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14017,DB00324,Fluorometholone,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14018,DB00394,Beclomethasone dipropionate,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14019,DB00443,Betamethasone,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14022,DB00596,Ulobetasol,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14023,DB00620,Triamcinolone,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14024,DB00635,Prednisone,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14026,DB00663,Flumethasone,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14029,DB00846,Flurandrenolide,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14030,DB00860,Prednisolone,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14031,DB00896,Rimexolone,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14035,DB01384,Paramethasone,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14036,DB01410,Ciclesonide,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14050,DB15566,Prednisolone acetate,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,14754,DB14596,Loteprednol etabonate,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,15003,DB01380,Cortisone acetate,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,15051,DB11921,Deflazacort,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,15058,DB13003,Cortivazol,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,15463,DB00769,Hydrocortamate,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,15486,DB01130,Prednicarbate,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,15500,DB01260,Desonide,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,15582,DB06781,Difluprednate,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,15703,DB13158,Clobetasone,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,17775,DB00223,Diflorasone,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,17776,DB00547,Desoximetasone,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,17777,DB00838,Clocortolone,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.CIN,17779,DB05423,ORG-34517,1,29,3.622708797454834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14014,DB00180,Flunisolide,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14015,DB00240,Alclometasone,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14016,DB00253,Medrysone,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14017,DB00324,Fluorometholone,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14018,DB00394,Beclomethasone dipropionate,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14019,DB00443,Betamethasone,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14022,DB00596,Ulobetasol,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14023,DB00620,Triamcinolone,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14024,DB00635,Prednisone,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14026,DB00663,Flumethasone,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14029,DB00846,Flurandrenolide,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14030,DB00860,Prednisolone,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14031,DB00896,Rimexolone,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14035,DB01384,Paramethasone,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14036,DB01410,Ciclesonide,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14050,DB15566,Prednisolone acetate,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,14754,DB14596,Loteprednol etabonate,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,15003,DB01380,Cortisone acetate,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,15051,DB11921,Deflazacort,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,15058,DB13003,Cortivazol,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,15463,DB00769,Hydrocortamate,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,15486,DB01130,Prednicarbate,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,15500,DB01260,Desonide,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,15582,DB06781,Difluprednate,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,15703,DB13158,Clobetasone,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,17775,DB00223,Diflorasone,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,17776,DB00547,Desoximetasone,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,17777,DB00838,Clocortolone,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.GS,17779,DB05423,ORG-34517,1,29,3.6207048892974854,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14014,DB00180,Flunisolide,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14015,DB00240,Alclometasone,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14016,DB00253,Medrysone,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14017,DB00324,Fluorometholone,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14018,DB00394,Beclomethasone dipropionate,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14019,DB00443,Betamethasone,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14022,DB00596,Ulobetasol,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14023,DB00620,Triamcinolone,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14024,DB00635,Prednisone,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14026,DB00663,Flumethasone,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14029,DB00846,Flurandrenolide,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14030,DB00860,Prednisolone,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14031,DB00896,Rimexolone,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14035,DB01384,Paramethasone,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14036,DB01410,Ciclesonide,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14050,DB15566,Prednisolone acetate,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,14754,DB14596,Loteprednol etabonate,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,15003,DB01380,Cortisone acetate,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,15051,DB11921,Deflazacort,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,15058,DB13003,Cortivazol,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,15463,DB00769,Hydrocortamate,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,15486,DB01130,Prednicarbate,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,15500,DB01260,Desonide,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,15582,DB06781,Difluprednate,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,15703,DB13158,Clobetasone,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,17775,DB00223,Diflorasone,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,17776,DB00547,Desoximetasone,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,17777,DB00838,Clocortolone,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-SNV,17779,DB05423,ORG-34517,1,29,3.621330976486206,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14014,DB00180,Flunisolide,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14015,DB00240,Alclometasone,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14016,DB00253,Medrysone,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14017,DB00324,Fluorometholone,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14018,DB00394,Beclomethasone dipropionate,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14019,DB00443,Betamethasone,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14022,DB00596,Ulobetasol,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14023,DB00620,Triamcinolone,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14024,DB00635,Prednisone,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14026,DB00663,Flumethasone,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14029,DB00846,Flurandrenolide,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14030,DB00860,Prednisolone,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14031,DB00896,Rimexolone,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14035,DB01384,Paramethasone,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14036,DB01410,Ciclesonide,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14050,DB15566,Prednisolone acetate,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,14754,DB14596,Loteprednol etabonate,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,15003,DB01380,Cortisone acetate,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,15051,DB11921,Deflazacort,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,15058,DB13003,Cortivazol,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,15463,DB00769,Hydrocortamate,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,15486,DB01130,Prednicarbate,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,15500,DB01260,Desonide,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,15582,DB06781,Difluprednate,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,15703,DB13158,Clobetasone,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,17775,DB00223,Diflorasone,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,17776,DB00547,Desoximetasone,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,17777,DB00838,Clocortolone,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,uniform_union,subtype:GI.HM-indel,17779,DB05423,ORG-34517,1,29,3.6205101013183594,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14014,DB00180,Flunisolide,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14015,DB00240,Alclometasone,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14016,DB00253,Medrysone,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14017,DB00324,Fluorometholone,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14018,DB00394,Beclomethasone dipropionate,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14019,DB00443,Betamethasone,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14022,DB00596,Ulobetasol,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14023,DB00620,Triamcinolone,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14024,DB00635,Prednisone,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14026,DB00663,Flumethasone,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14029,DB00846,Flurandrenolide,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14030,DB00860,Prednisolone,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14031,DB00896,Rimexolone,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14035,DB01384,Paramethasone,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14036,DB01410,Ciclesonide,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14050,DB15566,Prednisolone acetate,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,14754,DB14596,Loteprednol etabonate,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,15003,DB01380,Cortisone acetate,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,15051,DB11921,Deflazacort,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,15058,DB13003,Cortivazol,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,15463,DB00769,Hydrocortamate,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,15486,DB01130,Prednicarbate,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,15500,DB01260,Desonide,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,15582,DB06781,Difluprednate,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,15703,DB13158,Clobetasone,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,17775,DB00223,Diflorasone,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,17776,DB00547,Desoximetasone,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,17777,DB00838,Clocortolone,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.CIN,17779,DB05423,ORG-34517,1,29,3.624150276184082,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14014,DB00180,Flunisolide,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14015,DB00240,Alclometasone,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14016,DB00253,Medrysone,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14017,DB00324,Fluorometholone,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14018,DB00394,Beclomethasone dipropionate,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14019,DB00443,Betamethasone,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14022,DB00596,Ulobetasol,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14023,DB00620,Triamcinolone,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14024,DB00635,Prednisone,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14026,DB00663,Flumethasone,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14029,DB00846,Flurandrenolide,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14030,DB00860,Prednisolone,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14031,DB00896,Rimexolone,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14035,DB01384,Paramethasone,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14036,DB01410,Ciclesonide,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14050,DB15566,Prednisolone acetate,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,14754,DB14596,Loteprednol etabonate,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,15003,DB01380,Cortisone acetate,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,15051,DB11921,Deflazacort,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,15058,DB13003,Cortivazol,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,15463,DB00769,Hydrocortamate,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,15486,DB01130,Prednicarbate,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,15500,DB01260,Desonide,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,15582,DB06781,Difluprednate,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,15703,DB13158,Clobetasone,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,17775,DB00223,Diflorasone,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,17776,DB00547,Desoximetasone,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,17777,DB00838,Clocortolone,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.GS,17779,DB05423,ORG-34517,1,29,3.6233136653900146,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14014,DB00180,Flunisolide,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14015,DB00240,Alclometasone,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14016,DB00253,Medrysone,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14017,DB00324,Fluorometholone,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14018,DB00394,Beclomethasone dipropionate,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14019,DB00443,Betamethasone,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14022,DB00596,Ulobetasol,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14023,DB00620,Triamcinolone,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14024,DB00635,Prednisone,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14026,DB00663,Flumethasone,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14029,DB00846,Flurandrenolide,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14030,DB00860,Prednisolone,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14031,DB00896,Rimexolone,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14035,DB01384,Paramethasone,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14036,DB01410,Ciclesonide,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14050,DB15566,Prednisolone acetate,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,14754,DB14596,Loteprednol etabonate,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,15003,DB01380,Cortisone acetate,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,15051,DB11921,Deflazacort,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,15058,DB13003,Cortivazol,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,15463,DB00769,Hydrocortamate,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,15486,DB01130,Prednicarbate,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,15500,DB01260,Desonide,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,15582,DB06781,Difluprednate,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,15703,DB13158,Clobetasone,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,17775,DB00223,Diflorasone,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,17776,DB00547,Desoximetasone,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,17777,DB00838,Clocortolone,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-SNV,17779,DB05423,ORG-34517,1,29,3.6242120265960693,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14014,DB00180,Flunisolide,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14015,DB00240,Alclometasone,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14016,DB00253,Medrysone,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14017,DB00324,Fluorometholone,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14018,DB00394,Beclomethasone dipropionate,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14019,DB00443,Betamethasone,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14022,DB00596,Ulobetasol,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14023,DB00620,Triamcinolone,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14024,DB00635,Prednisone,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14026,DB00663,Flumethasone,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14029,DB00846,Flurandrenolide,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14030,DB00860,Prednisolone,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14031,DB00896,Rimexolone,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14035,DB01384,Paramethasone,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14036,DB01410,Ciclesonide,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14050,DB15566,Prednisolone acetate,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,14754,DB14596,Loteprednol etabonate,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,15003,DB01380,Cortisone acetate,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,15051,DB11921,Deflazacort,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,15058,DB13003,Cortivazol,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,15463,DB00769,Hydrocortamate,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,15486,DB01130,Prednicarbate,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,15500,DB01260,Desonide,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,15582,DB06781,Difluprednate,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,15703,DB13158,Clobetasone,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,17775,DB00223,Diflorasone,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,17776,DB00547,Desoximetasone,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,17777,DB00838,Clocortolone,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,frequency,subtype:GI.HM-indel,17779,DB05423,ORG-34517,1,29,3.619255304336548,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14014,DB00180,Flunisolide,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14015,DB00240,Alclometasone,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14016,DB00253,Medrysone,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14017,DB00324,Fluorometholone,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14018,DB00394,Beclomethasone dipropionate,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14019,DB00443,Betamethasone,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14022,DB00596,Ulobetasol,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14023,DB00620,Triamcinolone,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14024,DB00635,Prednisone,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14026,DB00663,Flumethasone,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14029,DB00846,Flurandrenolide,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14030,DB00860,Prednisolone,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14031,DB00896,Rimexolone,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14035,DB01384,Paramethasone,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14036,DB01410,Ciclesonide,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14050,DB15566,Prednisolone acetate,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,14754,DB14596,Loteprednol etabonate,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,15003,DB01380,Cortisone acetate,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,15051,DB11921,Deflazacort,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,15058,DB13003,Cortivazol,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,15463,DB00769,Hydrocortamate,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,15486,DB01130,Prednicarbate,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,15500,DB01260,Desonide,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,15582,DB06781,Difluprednate,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,15703,DB13158,Clobetasone,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,17775,DB00223,Diflorasone,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,17776,DB00547,Desoximetasone,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,17777,DB00838,Clocortolone,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.CIN,17779,DB05423,ORG-34517,1,29,3.612915277481079,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14014,DB00180,Flunisolide,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14015,DB00240,Alclometasone,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14016,DB00253,Medrysone,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14017,DB00324,Fluorometholone,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14018,DB00394,Beclomethasone dipropionate,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14019,DB00443,Betamethasone,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14022,DB00596,Ulobetasol,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14023,DB00620,Triamcinolone,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14024,DB00635,Prednisone,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14026,DB00663,Flumethasone,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14029,DB00846,Flurandrenolide,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14030,DB00860,Prednisolone,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14031,DB00896,Rimexolone,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14035,DB01384,Paramethasone,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14036,DB01410,Ciclesonide,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14050,DB15566,Prednisolone acetate,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,14754,DB14596,Loteprednol etabonate,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,15003,DB01380,Cortisone acetate,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,15051,DB11921,Deflazacort,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,15058,DB13003,Cortivazol,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,15463,DB00769,Hydrocortamate,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,15486,DB01130,Prednicarbate,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,15500,DB01260,Desonide,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,15582,DB06781,Difluprednate,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,15703,DB13158,Clobetasone,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,17775,DB00223,Diflorasone,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,17776,DB00547,Desoximetasone,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,17777,DB00838,Clocortolone,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.GS,17779,DB05423,ORG-34517,1,29,3.596186637878418,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14014,DB00180,Flunisolide,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14015,DB00240,Alclometasone,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14016,DB00253,Medrysone,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14017,DB00324,Fluorometholone,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14018,DB00394,Beclomethasone dipropionate,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14019,DB00443,Betamethasone,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14022,DB00596,Ulobetasol,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14023,DB00620,Triamcinolone,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14024,DB00635,Prednisone,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14026,DB00663,Flumethasone,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14029,DB00846,Flurandrenolide,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14030,DB00860,Prednisolone,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14031,DB00896,Rimexolone,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14035,DB01384,Paramethasone,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14036,DB01410,Ciclesonide,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14050,DB15566,Prednisolone acetate,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,14754,DB14596,Loteprednol etabonate,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,15003,DB01380,Cortisone acetate,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,15051,DB11921,Deflazacort,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,15058,DB13003,Cortivazol,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,15463,DB00769,Hydrocortamate,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,15486,DB01130,Prednicarbate,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,15500,DB01260,Desonide,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,15582,DB06781,Difluprednate,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,15703,DB13158,Clobetasone,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,17775,DB00223,Diflorasone,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,17776,DB00547,Desoximetasone,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,17777,DB00838,Clocortolone,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-SNV,17779,DB05423,ORG-34517,1,29,3.639256715774536,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14014,DB00180,Flunisolide,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14015,DB00240,Alclometasone,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14016,DB00253,Medrysone,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14017,DB00324,Fluorometholone,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14018,DB00394,Beclomethasone dipropionate,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14019,DB00443,Betamethasone,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14022,DB00596,Ulobetasol,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14023,DB00620,Triamcinolone,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14024,DB00635,Prednisone,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14026,DB00663,Flumethasone,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14029,DB00846,Flurandrenolide,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14030,DB00860,Prednisolone,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14031,DB00896,Rimexolone,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14035,DB01384,Paramethasone,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14036,DB01410,Ciclesonide,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14050,DB15566,Prednisolone acetate,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,14754,DB14596,Loteprednol etabonate,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,15003,DB01380,Cortisone acetate,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,15051,DB11921,Deflazacort,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,15058,DB13003,Cortivazol,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,15463,DB00769,Hydrocortamate,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,15486,DB01130,Prednicarbate,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,15500,DB01260,Desonide,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,15582,DB06781,Difluprednate,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,15703,DB13158,Clobetasone,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,17775,DB00223,Diflorasone,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,17776,DB00547,Desoximetasone,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,17777,DB00838,Clocortolone,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+42,selective_frequency,subtype:GI.HM-indel,17779,DB05423,ORG-34517,1,29,3.6397969722747803,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14014,DB00180,Flunisolide,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14015,DB00240,Alclometasone,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14016,DB00253,Medrysone,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14017,DB00324,Fluorometholone,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14018,DB00394,Beclomethasone dipropionate,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14019,DB00443,Betamethasone,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14022,DB00596,Ulobetasol,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14023,DB00620,Triamcinolone,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14024,DB00635,Prednisone,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14026,DB00663,Flumethasone,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14029,DB00846,Flurandrenolide,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14030,DB00860,Prednisolone,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14031,DB00896,Rimexolone,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14035,DB01384,Paramethasone,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14036,DB01410,Ciclesonide,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14050,DB15566,Prednisolone acetate,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,14754,DB14596,Loteprednol etabonate,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,15003,DB01380,Cortisone acetate,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,15051,DB11921,Deflazacort,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,15058,DB13003,Cortivazol,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,15463,DB00769,Hydrocortamate,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,15486,DB01130,Prednicarbate,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,15500,DB01260,Desonide,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,15582,DB06781,Difluprednate,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,15703,DB13158,Clobetasone,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,17775,DB00223,Diflorasone,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,17776,DB00547,Desoximetasone,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,17777,DB00838,Clocortolone,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.CIN,17779,DB05423,ORG-34517,1,29,3.552324056625366,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14014,DB00180,Flunisolide,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14015,DB00240,Alclometasone,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14016,DB00253,Medrysone,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14017,DB00324,Fluorometholone,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14018,DB00394,Beclomethasone dipropionate,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14019,DB00443,Betamethasone,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14022,DB00596,Ulobetasol,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14023,DB00620,Triamcinolone,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14024,DB00635,Prednisone,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14026,DB00663,Flumethasone,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14029,DB00846,Flurandrenolide,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14030,DB00860,Prednisolone,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14031,DB00896,Rimexolone,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14035,DB01384,Paramethasone,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14036,DB01410,Ciclesonide,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14050,DB15566,Prednisolone acetate,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,14754,DB14596,Loteprednol etabonate,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,15003,DB01380,Cortisone acetate,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,15051,DB11921,Deflazacort,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,15058,DB13003,Cortivazol,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,15463,DB00769,Hydrocortamate,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,15486,DB01130,Prednicarbate,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,15500,DB01260,Desonide,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,15582,DB06781,Difluprednate,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,15703,DB13158,Clobetasone,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,17775,DB00223,Diflorasone,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,17776,DB00547,Desoximetasone,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,17777,DB00838,Clocortolone,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.GS,17779,DB05423,ORG-34517,1,29,3.549337148666382,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14014,DB00180,Flunisolide,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14015,DB00240,Alclometasone,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14016,DB00253,Medrysone,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14017,DB00324,Fluorometholone,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14018,DB00394,Beclomethasone dipropionate,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14019,DB00443,Betamethasone,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14022,DB00596,Ulobetasol,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14023,DB00620,Triamcinolone,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14024,DB00635,Prednisone,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14026,DB00663,Flumethasone,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14029,DB00846,Flurandrenolide,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14030,DB00860,Prednisolone,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14031,DB00896,Rimexolone,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14035,DB01384,Paramethasone,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14036,DB01410,Ciclesonide,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14050,DB15566,Prednisolone acetate,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,14754,DB14596,Loteprednol etabonate,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,15003,DB01380,Cortisone acetate,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,15051,DB11921,Deflazacort,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,15058,DB13003,Cortivazol,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,15463,DB00769,Hydrocortamate,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,15486,DB01130,Prednicarbate,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,15500,DB01260,Desonide,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,15582,DB06781,Difluprednate,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,15703,DB13158,Clobetasone,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,17775,DB00223,Diflorasone,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,17776,DB00547,Desoximetasone,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,17777,DB00838,Clocortolone,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-SNV,17779,DB05423,ORG-34517,1,29,3.552253246307373,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14014,DB00180,Flunisolide,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14015,DB00240,Alclometasone,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14016,DB00253,Medrysone,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14017,DB00324,Fluorometholone,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14018,DB00394,Beclomethasone dipropionate,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14019,DB00443,Betamethasone,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14022,DB00596,Ulobetasol,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14023,DB00620,Triamcinolone,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14024,DB00635,Prednisone,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14026,DB00663,Flumethasone,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14029,DB00846,Flurandrenolide,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14030,DB00860,Prednisolone,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14031,DB00896,Rimexolone,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14035,DB01384,Paramethasone,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14036,DB01410,Ciclesonide,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14050,DB15566,Prednisolone acetate,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,14754,DB14596,Loteprednol etabonate,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,15003,DB01380,Cortisone acetate,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,15051,DB11921,Deflazacort,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,15058,DB13003,Cortivazol,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,15463,DB00769,Hydrocortamate,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,15486,DB01130,Prednicarbate,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,15500,DB01260,Desonide,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,15582,DB06781,Difluprednate,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,15703,DB13158,Clobetasone,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,17775,DB00223,Diflorasone,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,17776,DB00547,Desoximetasone,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,17777,DB00838,Clocortolone,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,uniform_union,subtype:GI.HM-indel,17779,DB05423,ORG-34517,1,29,3.5505881309509277,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14014,DB00180,Flunisolide,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14015,DB00240,Alclometasone,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14016,DB00253,Medrysone,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14017,DB00324,Fluorometholone,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14018,DB00394,Beclomethasone dipropionate,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14019,DB00443,Betamethasone,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14022,DB00596,Ulobetasol,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14023,DB00620,Triamcinolone,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14024,DB00635,Prednisone,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14026,DB00663,Flumethasone,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14029,DB00846,Flurandrenolide,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14030,DB00860,Prednisolone,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14031,DB00896,Rimexolone,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14035,DB01384,Paramethasone,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14036,DB01410,Ciclesonide,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14050,DB15566,Prednisolone acetate,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,14754,DB14596,Loteprednol etabonate,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,15003,DB01380,Cortisone acetate,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,15051,DB11921,Deflazacort,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,15058,DB13003,Cortivazol,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,15463,DB00769,Hydrocortamate,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,15486,DB01130,Prednicarbate,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,15500,DB01260,Desonide,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,15582,DB06781,Difluprednate,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,15703,DB13158,Clobetasone,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,17775,DB00223,Diflorasone,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,17776,DB00547,Desoximetasone,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,17777,DB00838,Clocortolone,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.CIN,17779,DB05423,ORG-34517,1,29,3.5546915531158447,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14014,DB00180,Flunisolide,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14015,DB00240,Alclometasone,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14016,DB00253,Medrysone,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14017,DB00324,Fluorometholone,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14018,DB00394,Beclomethasone dipropionate,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14019,DB00443,Betamethasone,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14022,DB00596,Ulobetasol,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14023,DB00620,Triamcinolone,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14024,DB00635,Prednisone,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14026,DB00663,Flumethasone,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14029,DB00846,Flurandrenolide,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14030,DB00860,Prednisolone,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14031,DB00896,Rimexolone,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14035,DB01384,Paramethasone,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14036,DB01410,Ciclesonide,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14050,DB15566,Prednisolone acetate,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,14754,DB14596,Loteprednol etabonate,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,15003,DB01380,Cortisone acetate,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,15051,DB11921,Deflazacort,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,15058,DB13003,Cortivazol,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,15463,DB00769,Hydrocortamate,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,15486,DB01130,Prednicarbate,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,15500,DB01260,Desonide,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,15582,DB06781,Difluprednate,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,15703,DB13158,Clobetasone,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,17775,DB00223,Diflorasone,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,17776,DB00547,Desoximetasone,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,17777,DB00838,Clocortolone,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.GS,17779,DB05423,ORG-34517,1,29,3.547819137573242,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14014,DB00180,Flunisolide,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14015,DB00240,Alclometasone,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14016,DB00253,Medrysone,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14017,DB00324,Fluorometholone,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14018,DB00394,Beclomethasone dipropionate,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14019,DB00443,Betamethasone,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14022,DB00596,Ulobetasol,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14023,DB00620,Triamcinolone,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14024,DB00635,Prednisone,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14026,DB00663,Flumethasone,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14029,DB00846,Flurandrenolide,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14030,DB00860,Prednisolone,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14031,DB00896,Rimexolone,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14035,DB01384,Paramethasone,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14036,DB01410,Ciclesonide,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14050,DB15566,Prednisolone acetate,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,14754,DB14596,Loteprednol etabonate,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,15003,DB01380,Cortisone acetate,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,15051,DB11921,Deflazacort,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,15058,DB13003,Cortivazol,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,15463,DB00769,Hydrocortamate,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,15486,DB01130,Prednicarbate,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,15500,DB01260,Desonide,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,15582,DB06781,Difluprednate,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,15703,DB13158,Clobetasone,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,17775,DB00223,Diflorasone,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,17776,DB00547,Desoximetasone,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,17777,DB00838,Clocortolone,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-SNV,17779,DB05423,ORG-34517,1,29,3.5523488521575928,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14014,DB00180,Flunisolide,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14015,DB00240,Alclometasone,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14016,DB00253,Medrysone,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14017,DB00324,Fluorometholone,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14018,DB00394,Beclomethasone dipropionate,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14019,DB00443,Betamethasone,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14022,DB00596,Ulobetasol,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14023,DB00620,Triamcinolone,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14024,DB00635,Prednisone,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14026,DB00663,Flumethasone,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14029,DB00846,Flurandrenolide,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14030,DB00860,Prednisolone,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14031,DB00896,Rimexolone,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14035,DB01384,Paramethasone,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14036,DB01410,Ciclesonide,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14050,DB15566,Prednisolone acetate,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,14754,DB14596,Loteprednol etabonate,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,15003,DB01380,Cortisone acetate,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,15051,DB11921,Deflazacort,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,15058,DB13003,Cortivazol,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,15463,DB00769,Hydrocortamate,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,15486,DB01130,Prednicarbate,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,15500,DB01260,Desonide,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,15582,DB06781,Difluprednate,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,15703,DB13158,Clobetasone,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,17775,DB00223,Diflorasone,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,17776,DB00547,Desoximetasone,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,17777,DB00838,Clocortolone,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,frequency,subtype:GI.HM-indel,17779,DB05423,ORG-34517,1,29,3.5461184978485107,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14014,DB00180,Flunisolide,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14015,DB00240,Alclometasone,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14016,DB00253,Medrysone,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14017,DB00324,Fluorometholone,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14018,DB00394,Beclomethasone dipropionate,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14019,DB00443,Betamethasone,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14022,DB00596,Ulobetasol,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14023,DB00620,Triamcinolone,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14024,DB00635,Prednisone,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14026,DB00663,Flumethasone,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14029,DB00846,Flurandrenolide,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14030,DB00860,Prednisolone,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14031,DB00896,Rimexolone,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14035,DB01384,Paramethasone,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14036,DB01410,Ciclesonide,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14050,DB15566,Prednisolone acetate,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,14754,DB14596,Loteprednol etabonate,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,15003,DB01380,Cortisone acetate,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,15051,DB11921,Deflazacort,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,15058,DB13003,Cortivazol,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,15463,DB00769,Hydrocortamate,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,15486,DB01130,Prednicarbate,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,15500,DB01260,Desonide,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,15582,DB06781,Difluprednate,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,15703,DB13158,Clobetasone,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,17775,DB00223,Diflorasone,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,17776,DB00547,Desoximetasone,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,17777,DB00838,Clocortolone,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.CIN,17779,DB05423,ORG-34517,1,29,3.548731803894043,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14014,DB00180,Flunisolide,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14015,DB00240,Alclometasone,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14016,DB00253,Medrysone,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14017,DB00324,Fluorometholone,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14018,DB00394,Beclomethasone dipropionate,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14019,DB00443,Betamethasone,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14022,DB00596,Ulobetasol,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14023,DB00620,Triamcinolone,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14024,DB00635,Prednisone,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14026,DB00663,Flumethasone,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14029,DB00846,Flurandrenolide,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14030,DB00860,Prednisolone,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14031,DB00896,Rimexolone,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14035,DB01384,Paramethasone,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14036,DB01410,Ciclesonide,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14050,DB15566,Prednisolone acetate,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,14754,DB14596,Loteprednol etabonate,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,15003,DB01380,Cortisone acetate,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,15051,DB11921,Deflazacort,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,15058,DB13003,Cortivazol,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,15463,DB00769,Hydrocortamate,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,15486,DB01130,Prednicarbate,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,15500,DB01260,Desonide,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,15582,DB06781,Difluprednate,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,15703,DB13158,Clobetasone,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,17775,DB00223,Diflorasone,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,17776,DB00547,Desoximetasone,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,17777,DB00838,Clocortolone,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.GS,17779,DB05423,ORG-34517,1,29,3.5052099227905273,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14014,DB00180,Flunisolide,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14015,DB00240,Alclometasone,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14016,DB00253,Medrysone,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14017,DB00324,Fluorometholone,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14018,DB00394,Beclomethasone dipropionate,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14019,DB00443,Betamethasone,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14022,DB00596,Ulobetasol,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14023,DB00620,Triamcinolone,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14024,DB00635,Prednisone,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14026,DB00663,Flumethasone,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14029,DB00846,Flurandrenolide,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14030,DB00860,Prednisolone,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14031,DB00896,Rimexolone,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14035,DB01384,Paramethasone,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14036,DB01410,Ciclesonide,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14050,DB15566,Prednisolone acetate,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,14754,DB14596,Loteprednol etabonate,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,15003,DB01380,Cortisone acetate,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,15051,DB11921,Deflazacort,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,15058,DB13003,Cortivazol,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,15463,DB00769,Hydrocortamate,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,15486,DB01130,Prednicarbate,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,15500,DB01260,Desonide,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,15582,DB06781,Difluprednate,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,15703,DB13158,Clobetasone,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,17775,DB00223,Diflorasone,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,17776,DB00547,Desoximetasone,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,17777,DB00838,Clocortolone,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-SNV,17779,DB05423,ORG-34517,1,29,3.598550796508789,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14014,DB00180,Flunisolide,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14015,DB00240,Alclometasone,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14016,DB00253,Medrysone,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14017,DB00324,Fluorometholone,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14018,DB00394,Beclomethasone dipropionate,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14019,DB00443,Betamethasone,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14022,DB00596,Ulobetasol,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14023,DB00620,Triamcinolone,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14024,DB00635,Prednisone,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14026,DB00663,Flumethasone,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14029,DB00846,Flurandrenolide,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14030,DB00860,Prednisolone,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14031,DB00896,Rimexolone,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14035,DB01384,Paramethasone,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14036,DB01410,Ciclesonide,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14050,DB15566,Prednisolone acetate,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,14754,DB14596,Loteprednol etabonate,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,15003,DB01380,Cortisone acetate,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,15051,DB11921,Deflazacort,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,15058,DB13003,Cortivazol,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,15463,DB00769,Hydrocortamate,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,15486,DB01130,Prednicarbate,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,15500,DB01260,Desonide,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,15582,DB06781,Difluprednate,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,15703,DB13158,Clobetasone,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,17775,DB00223,Diflorasone,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,17776,DB00547,Desoximetasone,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,17777,DB00838,Clocortolone,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+43,selective_frequency,subtype:GI.HM-indel,17779,DB05423,ORG-34517,1,29,3.5425949096679688,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14014,DB00180,Flunisolide,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14015,DB00240,Alclometasone,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14016,DB00253,Medrysone,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14017,DB00324,Fluorometholone,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14018,DB00394,Beclomethasone dipropionate,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14019,DB00443,Betamethasone,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14022,DB00596,Ulobetasol,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14023,DB00620,Triamcinolone,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14024,DB00635,Prednisone,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14026,DB00663,Flumethasone,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14029,DB00846,Flurandrenolide,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14030,DB00860,Prednisolone,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14031,DB00896,Rimexolone,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14035,DB01384,Paramethasone,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14036,DB01410,Ciclesonide,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14050,DB15566,Prednisolone acetate,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,14754,DB14596,Loteprednol etabonate,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,15003,DB01380,Cortisone acetate,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,15051,DB11921,Deflazacort,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,15058,DB13003,Cortivazol,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,15463,DB00769,Hydrocortamate,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,15486,DB01130,Prednicarbate,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,15500,DB01260,Desonide,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,15582,DB06781,Difluprednate,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,15703,DB13158,Clobetasone,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,17775,DB00223,Diflorasone,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,17776,DB00547,Desoximetasone,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,17777,DB00838,Clocortolone,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.CIN,17779,DB05423,ORG-34517,1,29,3.4443509578704834,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14014,DB00180,Flunisolide,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14015,DB00240,Alclometasone,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14016,DB00253,Medrysone,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14017,DB00324,Fluorometholone,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14018,DB00394,Beclomethasone dipropionate,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14019,DB00443,Betamethasone,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14022,DB00596,Ulobetasol,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14023,DB00620,Triamcinolone,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14024,DB00635,Prednisone,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14026,DB00663,Flumethasone,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14029,DB00846,Flurandrenolide,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14030,DB00860,Prednisolone,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14031,DB00896,Rimexolone,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14035,DB01384,Paramethasone,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14036,DB01410,Ciclesonide,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14050,DB15566,Prednisolone acetate,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,14754,DB14596,Loteprednol etabonate,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,15003,DB01380,Cortisone acetate,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,15051,DB11921,Deflazacort,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,15058,DB13003,Cortivazol,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,15463,DB00769,Hydrocortamate,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,15486,DB01130,Prednicarbate,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,15500,DB01260,Desonide,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,15582,DB06781,Difluprednate,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,15703,DB13158,Clobetasone,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,17775,DB00223,Diflorasone,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,17776,DB00547,Desoximetasone,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,17777,DB00838,Clocortolone,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.GS,17779,DB05423,ORG-34517,1,29,3.4451498985290527,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14014,DB00180,Flunisolide,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14015,DB00240,Alclometasone,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14016,DB00253,Medrysone,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14017,DB00324,Fluorometholone,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14018,DB00394,Beclomethasone dipropionate,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14019,DB00443,Betamethasone,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14022,DB00596,Ulobetasol,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14023,DB00620,Triamcinolone,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14024,DB00635,Prednisone,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14026,DB00663,Flumethasone,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14029,DB00846,Flurandrenolide,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14030,DB00860,Prednisolone,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14031,DB00896,Rimexolone,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14035,DB01384,Paramethasone,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14036,DB01410,Ciclesonide,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14050,DB15566,Prednisolone acetate,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,14754,DB14596,Loteprednol etabonate,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,15003,DB01380,Cortisone acetate,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,15051,DB11921,Deflazacort,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,15058,DB13003,Cortivazol,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,15463,DB00769,Hydrocortamate,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,15486,DB01130,Prednicarbate,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,15500,DB01260,Desonide,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,15582,DB06781,Difluprednate,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,15703,DB13158,Clobetasone,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,17775,DB00223,Diflorasone,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,17776,DB00547,Desoximetasone,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,17777,DB00838,Clocortolone,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-SNV,17779,DB05423,ORG-34517,1,29,3.4428446292877197,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14014,DB00180,Flunisolide,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14015,DB00240,Alclometasone,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14016,DB00253,Medrysone,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14017,DB00324,Fluorometholone,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14018,DB00394,Beclomethasone dipropionate,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14019,DB00443,Betamethasone,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14022,DB00596,Ulobetasol,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14023,DB00620,Triamcinolone,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14024,DB00635,Prednisone,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14026,DB00663,Flumethasone,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14029,DB00846,Flurandrenolide,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14030,DB00860,Prednisolone,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14031,DB00896,Rimexolone,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14035,DB01384,Paramethasone,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14036,DB01410,Ciclesonide,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14050,DB15566,Prednisolone acetate,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,14754,DB14596,Loteprednol etabonate,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,15003,DB01380,Cortisone acetate,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,15051,DB11921,Deflazacort,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,15058,DB13003,Cortivazol,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,15463,DB00769,Hydrocortamate,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,15486,DB01130,Prednicarbate,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,15500,DB01260,Desonide,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,15582,DB06781,Difluprednate,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,15703,DB13158,Clobetasone,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,17775,DB00223,Diflorasone,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,17776,DB00547,Desoximetasone,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,17777,DB00838,Clocortolone,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,uniform_union,subtype:GI.HM-indel,17779,DB05423,ORG-34517,1,29,3.4412167072296143,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14014,DB00180,Flunisolide,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14015,DB00240,Alclometasone,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14016,DB00253,Medrysone,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14017,DB00324,Fluorometholone,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14018,DB00394,Beclomethasone dipropionate,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14019,DB00443,Betamethasone,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14022,DB00596,Ulobetasol,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14023,DB00620,Triamcinolone,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14024,DB00635,Prednisone,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14026,DB00663,Flumethasone,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14029,DB00846,Flurandrenolide,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14030,DB00860,Prednisolone,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14031,DB00896,Rimexolone,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14035,DB01384,Paramethasone,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14036,DB01410,Ciclesonide,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14050,DB15566,Prednisolone acetate,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,14754,DB14596,Loteprednol etabonate,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,15003,DB01380,Cortisone acetate,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,15051,DB11921,Deflazacort,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,15058,DB13003,Cortivazol,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,15463,DB00769,Hydrocortamate,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,15486,DB01130,Prednicarbate,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,15500,DB01260,Desonide,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,15582,DB06781,Difluprednate,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,15703,DB13158,Clobetasone,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,17775,DB00223,Diflorasone,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,17776,DB00547,Desoximetasone,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,17777,DB00838,Clocortolone,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.CIN,17779,DB05423,ORG-34517,1,29,3.4566774368286133,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14014,DB00180,Flunisolide,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14015,DB00240,Alclometasone,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14016,DB00253,Medrysone,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14017,DB00324,Fluorometholone,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14018,DB00394,Beclomethasone dipropionate,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14019,DB00443,Betamethasone,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14022,DB00596,Ulobetasol,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14023,DB00620,Triamcinolone,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14024,DB00635,Prednisone,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14026,DB00663,Flumethasone,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14029,DB00846,Flurandrenolide,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14030,DB00860,Prednisolone,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14031,DB00896,Rimexolone,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14035,DB01384,Paramethasone,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14036,DB01410,Ciclesonide,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14050,DB15566,Prednisolone acetate,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,14754,DB14596,Loteprednol etabonate,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,15003,DB01380,Cortisone acetate,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,15051,DB11921,Deflazacort,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,15058,DB13003,Cortivazol,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,15463,DB00769,Hydrocortamate,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,15486,DB01130,Prednicarbate,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,15500,DB01260,Desonide,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,15582,DB06781,Difluprednate,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,15703,DB13158,Clobetasone,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,17775,DB00223,Diflorasone,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,17776,DB00547,Desoximetasone,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,17777,DB00838,Clocortolone,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.GS,17779,DB05423,ORG-34517,1,29,3.4499919414520264,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14014,DB00180,Flunisolide,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14015,DB00240,Alclometasone,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14016,DB00253,Medrysone,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14017,DB00324,Fluorometholone,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14018,DB00394,Beclomethasone dipropionate,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14019,DB00443,Betamethasone,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14022,DB00596,Ulobetasol,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14023,DB00620,Triamcinolone,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14024,DB00635,Prednisone,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14026,DB00663,Flumethasone,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14029,DB00846,Flurandrenolide,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14030,DB00860,Prednisolone,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14031,DB00896,Rimexolone,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14035,DB01384,Paramethasone,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14036,DB01410,Ciclesonide,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14050,DB15566,Prednisolone acetate,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,14754,DB14596,Loteprednol etabonate,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,15003,DB01380,Cortisone acetate,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,15051,DB11921,Deflazacort,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,15058,DB13003,Cortivazol,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,15463,DB00769,Hydrocortamate,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,15486,DB01130,Prednicarbate,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,15500,DB01260,Desonide,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,15582,DB06781,Difluprednate,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,15703,DB13158,Clobetasone,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,17775,DB00223,Diflorasone,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,17776,DB00547,Desoximetasone,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,17777,DB00838,Clocortolone,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-SNV,17779,DB05423,ORG-34517,1,29,3.4482476711273193,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14014,DB00180,Flunisolide,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14015,DB00240,Alclometasone,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14016,DB00253,Medrysone,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14017,DB00324,Fluorometholone,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14018,DB00394,Beclomethasone dipropionate,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14019,DB00443,Betamethasone,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14022,DB00596,Ulobetasol,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14023,DB00620,Triamcinolone,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14024,DB00635,Prednisone,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14026,DB00663,Flumethasone,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14029,DB00846,Flurandrenolide,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14030,DB00860,Prednisolone,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14031,DB00896,Rimexolone,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14035,DB01384,Paramethasone,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14036,DB01410,Ciclesonide,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14050,DB15566,Prednisolone acetate,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,14754,DB14596,Loteprednol etabonate,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,15003,DB01380,Cortisone acetate,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,15051,DB11921,Deflazacort,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,15058,DB13003,Cortivazol,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,15463,DB00769,Hydrocortamate,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,15486,DB01130,Prednicarbate,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,15500,DB01260,Desonide,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,15582,DB06781,Difluprednate,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,15703,DB13158,Clobetasone,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,17775,DB00223,Diflorasone,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,17776,DB00547,Desoximetasone,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,17777,DB00838,Clocortolone,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,frequency,subtype:GI.HM-indel,17779,DB05423,ORG-34517,1,29,3.4429805278778076,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14014,DB00180,Flunisolide,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14015,DB00240,Alclometasone,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14016,DB00253,Medrysone,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14017,DB00324,Fluorometholone,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14018,DB00394,Beclomethasone dipropionate,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14019,DB00443,Betamethasone,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14022,DB00596,Ulobetasol,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14023,DB00620,Triamcinolone,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14024,DB00635,Prednisone,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14026,DB00663,Flumethasone,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14029,DB00846,Flurandrenolide,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14030,DB00860,Prednisolone,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14031,DB00896,Rimexolone,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14035,DB01384,Paramethasone,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14036,DB01410,Ciclesonide,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14050,DB15566,Prednisolone acetate,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,14754,DB14596,Loteprednol etabonate,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,15003,DB01380,Cortisone acetate,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,15051,DB11921,Deflazacort,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,15058,DB13003,Cortivazol,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,15463,DB00769,Hydrocortamate,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,15486,DB01130,Prednicarbate,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,15500,DB01260,Desonide,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,15582,DB06781,Difluprednate,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,15703,DB13158,Clobetasone,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,17775,DB00223,Diflorasone,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,17776,DB00547,Desoximetasone,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,17777,DB00838,Clocortolone,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.CIN,17779,DB05423,ORG-34517,1,29,3.532137155532837,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14014,DB00180,Flunisolide,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14015,DB00240,Alclometasone,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14016,DB00253,Medrysone,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14017,DB00324,Fluorometholone,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14018,DB00394,Beclomethasone dipropionate,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14019,DB00443,Betamethasone,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14022,DB00596,Ulobetasol,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14023,DB00620,Triamcinolone,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14024,DB00635,Prednisone,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14026,DB00663,Flumethasone,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14029,DB00846,Flurandrenolide,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14030,DB00860,Prednisolone,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14031,DB00896,Rimexolone,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14035,DB01384,Paramethasone,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14036,DB01410,Ciclesonide,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14050,DB15566,Prednisolone acetate,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,14754,DB14596,Loteprednol etabonate,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,15003,DB01380,Cortisone acetate,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,15051,DB11921,Deflazacort,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,15058,DB13003,Cortivazol,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,15463,DB00769,Hydrocortamate,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,15486,DB01130,Prednicarbate,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,15500,DB01260,Desonide,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,15582,DB06781,Difluprednate,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,15703,DB13158,Clobetasone,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,17775,DB00223,Diflorasone,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,17776,DB00547,Desoximetasone,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,17777,DB00838,Clocortolone,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.GS,17779,DB05423,ORG-34517,1,29,3.4666969776153564,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14014,DB00180,Flunisolide,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14015,DB00240,Alclometasone,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14016,DB00253,Medrysone,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14017,DB00324,Fluorometholone,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14018,DB00394,Beclomethasone dipropionate,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14019,DB00443,Betamethasone,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14022,DB00596,Ulobetasol,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14023,DB00620,Triamcinolone,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14024,DB00635,Prednisone,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14026,DB00663,Flumethasone,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14029,DB00846,Flurandrenolide,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14030,DB00860,Prednisolone,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14031,DB00896,Rimexolone,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14035,DB01384,Paramethasone,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14036,DB01410,Ciclesonide,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14050,DB15566,Prednisolone acetate,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,14754,DB14596,Loteprednol etabonate,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,15003,DB01380,Cortisone acetate,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,15051,DB11921,Deflazacort,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,15058,DB13003,Cortivazol,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,15463,DB00769,Hydrocortamate,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,15486,DB01130,Prednicarbate,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,15500,DB01260,Desonide,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,15582,DB06781,Difluprednate,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,15703,DB13158,Clobetasone,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,17775,DB00223,Diflorasone,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,17776,DB00547,Desoximetasone,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,17777,DB00838,Clocortolone,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-SNV,17779,DB05423,ORG-34517,1,29,3.4825711250305176,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14014,DB00180,Flunisolide,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14015,DB00240,Alclometasone,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14016,DB00253,Medrysone,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14017,DB00324,Fluorometholone,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14018,DB00394,Beclomethasone dipropionate,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14019,DB00443,Betamethasone,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14022,DB00596,Ulobetasol,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14023,DB00620,Triamcinolone,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14024,DB00635,Prednisone,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14026,DB00663,Flumethasone,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14029,DB00846,Flurandrenolide,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14030,DB00860,Prednisolone,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14031,DB00896,Rimexolone,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14035,DB01384,Paramethasone,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14036,DB01410,Ciclesonide,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14050,DB15566,Prednisolone acetate,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,14754,DB14596,Loteprednol etabonate,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,15003,DB01380,Cortisone acetate,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,15051,DB11921,Deflazacort,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,15058,DB13003,Cortivazol,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,15463,DB00769,Hydrocortamate,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,15486,DB01130,Prednicarbate,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,15500,DB01260,Desonide,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,15582,DB06781,Difluprednate,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,15703,DB13158,Clobetasone,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,17775,DB00223,Diflorasone,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,17776,DB00547,Desoximetasone,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,17777,DB00838,Clocortolone,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties
+44,selective_frequency,subtype:GI.HM-indel,17779,DB05423,ORG-34517,1,29,3.4476473331451416,2908,False,unvalidated hypothesis; compound order unresolved within exact ties

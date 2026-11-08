@@ -1,0 +1,5 @@
+{
+  "prediction": "sampled PrimeKG indication recovery",
+  "subtype_sensitivity": "inference perturbations, not response accuracy",
+  "hypotheses": "unvalidated raw logits; no clinical efficacy or literature novelty established"
+}

@@ -1,0 +1,13 @@
+profile,subtype,samples,genes,effective_genes,cutoff_tied_genes
+uniform_union,subtype:GI.CIN,224,9763,9763.001,0
+uniform_union,subtype:GI.GS,49,3741,3741.0,0
+uniform_union,subtype:GI.HM-SNV,6,11421,11421.001,0
+uniform_union,subtype:GI.HM-indel,60,15580,15580.002,0
+frequency,subtype:GI.CIN,224,9763,2748.981,0
+frequency,subtype:GI.GS,49,3741,1920.5835,0
+frequency,subtype:GI.HM-SNV,6,11421,8446.912,0
+frequency,subtype:GI.HM-indel,60,15580,8786.813,0
+selective_frequency,subtype:GI.CIN,224,22,12.019447,0
+selective_frequency,subtype:GI.GS,49,57,32.797844,0
+selective_frequency,subtype:GI.HM-SNV,6,200,199.07266,412
+selective_frequency,subtype:GI.HM-indel,60,200,191.03696,31

@@ -1,16 +1,20 @@
 # ECoGraph–PrimeKG compatibility
 
+For the separate CRC GNN sensitivity/ablation experiment, see
+[CRC_EXPERIMENTS.md](CRC_EXPERIMENTS.md). Its timestamped results live under
+`reports/crc_experiments/`; the original compatibility outputs stay unchanged.
+
 Run from the project root (paths are relative):
 
 ```sh
 python3 -m pip install -r analysis/requirements.txt
 python3 analysis/run_compatibility.py
-python3 -m unittest discover -s analysis -p 'test_*.py'
+python3 -m unittest discover -s tests/research -p 'test_compatibility.py'
 ```
 
 The command inspects and hashes the eight requested ECoGraph exports and
-`kg.csv`, scans PrimeKG in chunks, audits identifiers and edges, computes
-conservative symbol mappings, and generates `analysis/results/compatibility_report.md`.
+`data/raw/primekg/kg.csv`, scans PrimeKG in chunks, audits identifiers and edges, computes
+conservative symbol mappings, and generates `reports/compatibility/compatibility_report.md`.
 It never merges graphs or modifies source datasets. It reuses the endpoint
 schema and identifier-preservation approach of `src/primekg/prepare.py`, without
 relying on possibly stale derived CSVs.
@@ -25,7 +29,7 @@ unavailable, not biologically empty. Use a different output directory for this
 mode to avoid mixing outputs from different runs:
 
 ```sh
-python3 analysis/run_compatibility.py --no-supplementary-recovery --output analysis/export_only_results
+python3 analysis/run_compatibility.py --no-supplementary-recovery --output reports/compatibility_export_only
 ```
 
 Other options: `--primekg`, `--ecograph`, and `--output`. No web services,
@@ -56,6 +60,6 @@ its new schema and observation semantics must then be verified before replacing
 the separately labeled recovery analysis. It does not silently reinterpret
 new source data using assumptions from a blank export.
 
-Start with `results/compatibility_report.md`; `results/README.md` lists artifacts.
+Start with `reports/compatibility/compatibility_report.md`; `reports/compatibility/README.md` lists artifacts.
 Schemas/records are in `source_inspection.txt`; SHA-256/version evidence is in
 `source_manifest.json`, `supplementary_recovery_audit.json`, and `validation.json`.

@@ -2,6 +2,7 @@
 
 import argparse
 import asyncio
+import json
 import sys
 
 from agents import AgentsException
@@ -9,6 +10,7 @@ from openai import APIConnectionError, APIStatusError, APITimeoutError, Authenti
 
 from .config import NEBIUS_BASE_URL, load_settings
 from .runtime import DebugHooks, create_agent, create_client, run_turn
+from .repository import ResearchRepository, query
 
 
 def error_message(error):
@@ -29,6 +31,20 @@ def error_message(error):
 
 
 async def main_async(args):
+    if args.check_data:
+        repository = ResearchRepository()
+        checks = {
+            "predictions": query(repository, "get_drug_predictions", subtype="GI.CIN", top_k=5),
+            "targets": query(repository, "get_drug_targets", drug_id="DB00596"),
+            "subtype_genes": query(repository, "get_subtype_genes", subtype="GI.CIN", limit=1),
+            "phenotype_evidence": query(repository, "get_gene_phenotypes", gene="2908", limit=1),
+            "evaluation": query(repository, "get_model_evaluation"),
+        }
+        print(json.dumps({"mode": "offline_local_data_check", "fresh_inference": False,
+            "checks": {name: value["status"] for name, value in checks.items()},
+            "returned_tied_candidates": checks["predictions"].get("returned_count"),
+            "registered_backend": "reviewed cached experiment and local graph evidence"}, indent=2))
+        return 0 if all(value["status"] == "ok" for value in checks.values()) else 2
     try:
         settings = load_settings()
     except ValueError as error:
@@ -40,6 +56,7 @@ async def main_async(args):
         print(f"Provider: Nebius | Model: {hooks.safe(settings.model)}")
         print(f"API: Chat Completions | Endpoint: {NEBIUS_BASE_URL}chat/completions")
         print("OpenAI tracing: disabled")
+        print("Tools: " + ", ".join(tool.name for tool in agent.tools))
         if args.check:
             print("Configuration and agent startup OK (no network request made).")
             return 0
@@ -79,6 +96,7 @@ def main():
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--prompt", help="Run one prompt and exit (contacts Nebius).")
     mode.add_argument("--check", action="store_true", help="Validate configuration and startup offline.")
+    mode.add_argument("--check-data", action="store_true", help="Check local graph/result backends offline; no credentials or model calls.")
     try:
         return asyncio.run(main_async(parser.parse_args()))
     except KeyboardInterrupt:

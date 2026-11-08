@@ -1,0 +1,8 @@
+# Install separately in the notebook/modeling environment; PyTorch hardware
+# builds may need platform-specific installation by the modeling team.
+-r research.txt
+torch
+scikit-learn
+openpyxl>=3.1.5
+jupyterlab
+ipykernel

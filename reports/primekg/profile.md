@@ -84,4 +84,4 @@ Raw rows: 8,100,498. Unique nodes: 129,375.
 Removed 0 repeated ordered rows; multiplicity is retained in `raw_row_count`.
 1,214,512 exported ordered edges have a reverse edge with identical relation labels.
 
-See README.md for semantics, limitations, and construction examples.
+See ../../docs/research/primekg_exploration.md for semantics, limitations, and construction examples.
