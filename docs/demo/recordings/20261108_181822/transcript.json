@@ -1,0 +1,711 @@
+{
+  "recorded_utc": "2026-11-08T18:18:24.391959+00:00",
+  "provider": "Nebius Token Factory",
+  "data_backend": "crcsc",
+  "model": "zai-org/GLM-5.3-Flash",
+  "endpoint": "https://api.tokenfactory.nebius.com/v1/chat/completions",
+  "gnn_backend": "cached experiment, not fresh GNN inference",
+  "scenarios": [
+    {
+      "id": "candidate_audit",
+      "title": "Investigate the cached CMS2 drug ranking",
+      "short_title": "Why do these drugs tie?",
+      "description": "Inspect CMS2 targets and model controls",
+      "prompt": "Which drugs does the model rank highest for CMS2, and how much confidence should I place in that ranking? Check the recorded targets and model evaluation. Keep the answer brief and cite tool source paths.",
+      "events": [
+        {
+          "event": "tool_call",
+          "tool": "get_subtypes",
+          "call_id": "call_bef5af293f7f459c9aee70cb",
+          "arguments": {
+            "disease": "colorectal_cancer"
+          }
+        },
+        {
+          "event": "tool_call",
+          "tool": "get_model_evaluation",
+          "call_id": "call_1df6b407d66d4c24966d20ad",
+          "arguments": {}
+        },
+        {
+          "event": "tool_result",
+          "tool": "get_subtypes",
+          "call_id": "call_bef5af293f7f459c9aee70cb",
+          "result": {
+            "status": "ok",
+            "disease": "colorectal_cancer",
+            "subtypes": [
+              "CMS1",
+              "CMS2",
+              "CMS3",
+              "CMS4"
+            ],
+            "data_backend": "crcsc",
+            "classification": "expression-defined consensus molecular subtypes",
+            "source": "reports/crcsc_drug_gnn/20261108_173948/cms_nodes.csv",
+            "warning": "CMS1–4 are not equivalent to ECoGraph GI genomic subtypes. Cached hypothesis scores only."
+          }
+        },
+        {
+          "event": "tool_result",
+          "tool": "get_model_evaluation",
+          "call_id": "call_1df6b407d66d4c24966d20ad",
+          "result": {
+            "status": "ok",
+            "data_backend": "crcsc",
+            "run_id": "20261108_173948",
+            "source": "reports/crcsc_drug_gnn/20261108_173948/evaluation_metrics.csv",
+            "task": "held-out general disease indication recovery against sampled unknowns; no CMS therapeutic labels",
+            "test_known_indications": 853,
+            "test_unknown_pairs": 853,
+            "metric": "average precision; not accuracy, response probability, or efficacy",
+            "conditions": {
+              "drug_popularity": {
+                "runs": 1,
+                "mean_test_ap": 0.8941222954578794,
+                "min_test_ap": 0.8941222954578794,
+                "max_test_ap": 0.8941222954578794
+              },
+              "ppi": {
+                "runs": 3,
+                "mean_test_ap": 0.8243755314778513,
+                "min_test_ap": 0.8222828915600222,
+                "max_test_ap": 0.8267403107576715
+              },
+              "ppi_pathway": {
+                "runs": 3,
+                "mean_test_ap": 0.824953333435842,
+                "min_test_ap": 0.82253378634206,
+                "max_test_ap": 0.8268993016426398
+              },
+              "drug_only": {
+                "runs": 3,
+                "mean_test_ap": 0.8222998841127288,
+                "min_test_ap": 0.8214310249292913,
+                "max_test_ap": 0.8238968332018292
+              }
+            },
+            "selected_cached_model": {
+              "condition": "ppi_pathway",
+              "seed": 42,
+              "profile": "signed",
+              "test_ap": 0.82253378634206
+            },
+            "interpretation": "Popularity outperformed every fitted GNN. Molecular context gave a small indication-AP gain over drug-only, but the leading CMS drug group remains shared and unvalidated.",
+            "subtype_efficacy_evaluated": false,
+            "model_uses_phenotype_edges": false,
+            "warning": "Signed CMS expression is transferred through a decoder trained on unsigned disease-gene associations. Drug-action direction and subtype transfer validity are not established."
+          }
+        },
+        {
+          "event": "tool_call",
+          "tool": "get_drug_predictions",
+          "call_id": "call_d6fbdf62548a4524a3bca703",
+          "arguments": {
+            "subtype": "CMS2",
+            "top_k": 10
+          }
+        },
+        {
+          "event": "tool_result",
+          "tool": "get_drug_predictions",
+          "call_id": "call_d6fbdf62548a4524a3bca703",
+          "result": {
+            "status": "ok",
+            "data_backend": "crcsc",
+            "subtype": "CMS2",
+            "backend": "cached_gnn_experiment",
+            "fresh_inference": false,
+            "run_id": "20261108_173948",
+            "model_condition": "ppi_pathway",
+            "seed": 42,
+            "profile": "signed",
+            "source": "reports/crcsc_drug_gnn/20261108_173948/candidate_hypotheses.csv.gz",
+            "requested_top_k": 10,
+            "returned_count": 29,
+            "ties_included": true,
+            "predictions": [
+              {
+                "drug_id": "DB00180",
+                "drug_name": "Flunisolide",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 3
+              },
+              {
+                "drug_id": "DB00223",
+                "drug_name": "Diflorasone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 0
+              },
+              {
+                "drug_id": "DB00240",
+                "drug_name": "Alclometasone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 0
+              },
+              {
+                "drug_id": "DB00253",
+                "drug_name": "Medrysone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 2
+              },
+              {
+                "drug_id": "DB00324",
+                "drug_name": "Fluorometholone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 2
+              },
+              {
+                "drug_id": "DB00394",
+                "drug_name": "Beclomethasone dipropionate",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 4
+              },
+              {
+                "drug_id": "DB00443",
+                "drug_name": "Betamethasone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 57
+              },
+              {
+                "drug_id": "DB00547",
+                "drug_name": "Desoximetasone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 8
+              },
+              {
+                "drug_id": "DB00596",
+                "drug_name": "Ulobetasol",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 0
+              },
+              {
+                "drug_id": "DB00620",
+                "drug_name": "Triamcinolone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 65
+              },
+              {
+                "drug_id": "DB00635",
+                "drug_name": "Prednisone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 58
+              },
+              {
+                "drug_id": "DB00663",
+                "drug_name": "Flumethasone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 8
+              },
+              {
+                "drug_id": "DB00769",
+                "drug_name": "Hydrocortamate",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 0
+              },
+              {
+                "drug_id": "DB00838",
+                "drug_name": "Clocortolone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 0
+              },
+              {
+                "drug_id": "DB00846",
+                "drug_name": "Flurandrenolide",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 8
+              },
+              {
+                "drug_id": "DB00860",
+                "drug_name": "Prednisolone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 67
+              },
+              {
+                "drug_id": "DB00896",
+                "drug_name": "Rimexolone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 2
+              },
+              {
+                "drug_id": "DB01130",
+                "drug_name": "Prednicarbate",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 8
+              },
+              {
+                "drug_id": "DB01260",
+                "drug_name": "Desonide",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 13
+              },
+              {
+                "drug_id": "DB01380",
+                "drug_name": "Cortisone acetate",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 63
+              },
+              {
+                "drug_id": "DB01384",
+                "drug_name": "Paramethasone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 0
+              },
+              {
+                "drug_id": "DB01410",
+                "drug_name": "Ciclesonide",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 3
+              },
+              {
+                "drug_id": "DB05423",
+                "drug_name": "ORG-34517",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 0
+              },
+              {
+                "drug_id": "DB06781",
+                "drug_name": "Difluprednate",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 0
+              },
+              {
+                "drug_id": "DB11921",
+                "drug_name": "Deflazacort",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 2
+              },
+              {
+                "drug_id": "DB13003",
+                "drug_name": "Cortivazol",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 0
+              },
+              {
+                "drug_id": "DB13158",
+                "drug_name": "Clobetasone",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 0
+              },
+              {
+                "drug_id": "DB14596",
+                "drug_name": "Loteprednol etabonate",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 2
+              },
+              {
+                "drug_id": "DB15566",
+                "drug_name": "Prednisolone acetate",
+                "rank_min": 1,
+                "tie_group_size": 29,
+                "raw_logit": 2.2925541400909424,
+                "recorded_target_ncbi_ids": [
+                  "2908"
+                ],
+                "training_indication_count": 2
+              }
+            ],
+            "literature_review_performed": false,
+            "warning": "Full cutoff ties retained; no uniquely best drug within a tie. Raw logits are not efficacy probabilities. Signed expression is not a drug-action direction or dependency. No literature novelty or therapeutic validity established.",
+            "evaluation": {
+              "status": "ok",
+              "data_backend": "crcsc",
+              "run_id": "20261108_173948",
+              "source": "reports/crcsc_drug_gnn/20261108_173948/evaluation_metrics.csv",
+              "task": "held-out general disease indication recovery against sampled unknowns; no CMS therapeutic labels",
+              "test_known_indications": 853,
+              "test_unknown_pairs": 853,
+              "metric": "average precision; not accuracy, response probability, or efficacy",
+              "conditions": {
+                "drug_popularity": {
+                  "runs": 1,
+                  "mean_test_ap": 0.8941222954578794,
+                  "min_test_ap": 0.8941222954578794,
+                  "max_test_ap": 0.8941222954578794
+                },
+                "ppi": {
+                  "runs": 3,
+                  "mean_test_ap": 0.8243755314778513,
+                  "min_test_ap": 0.8222828915600222,
+                  "max_test_ap": 0.8267403107576715
+                },
+                "ppi_pathway": {
+                  "runs": 3,
+                  "mean_test_ap": 0.824953333435842,
+                  "min_test_ap": 0.82253378634206,
+                  "max_test_ap": 0.8268993016426398
+                },
+                "drug_only": {
+                  "runs": 3,
+                  "mean_test_ap": 0.8222998841127288,
+                  "min_test_ap": 0.8214310249292913,
+                  "max_test_ap": 0.8238968332018292
+                }
+              },
+              "selected_cached_model": {
+                "condition": "ppi_pathway",
+                "seed": 42,
+                "profile": "signed",
+                "test_ap": 0.82253378634206
+              },
+              "interpretation": "Popularity outperformed every fitted GNN. Molecular context gave a small indication-AP gain over drug-only, but the leading CMS drug group remains shared and unvalidated.",
+              "subtype_efficacy_evaluated": false,
+              "model_uses_phenotype_edges": false,
+              "warning": "Signed CMS expression is transferred through a decoder trained on unsigned disease-gene associations. Drug-action direction and subtype transfer validity are not established."
+            }
+          }
+        },
+        {
+          "event": "tool_call",
+          "tool": "get_drug_targets",
+          "call_id": "call_b17a9d6fb3c54c11b218b296",
+          "arguments": {
+            "drug_id": "DB00620"
+          }
+        },
+        {
+          "event": "tool_call",
+          "tool": "get_drug_targets",
+          "call_id": "call_9753e4906a3a45b0939c4df0",
+          "arguments": {
+            "drug_id": "DB00180"
+          }
+        },
+        {
+          "event": "tool_result",
+          "tool": "get_drug_targets",
+          "call_id": "call_b17a9d6fb3c54c11b218b296",
+          "result": {
+            "status": "ok",
+            "drug_id": "DB00620",
+            "drug_name": "Triamcinolone",
+            "relationship": {
+              "relation": "drug_protein",
+              "display_relation": "target"
+            },
+            "targets": [
+              {
+                "gene_id": "2908",
+                "namespace": "NCBI",
+                "symbols": [
+                  "NR3C1"
+                ],
+                "node_indices": [
+                  509
+                ]
+              }
+            ],
+            "target_count": 1,
+            "source": "reports/compatibility/primekg_direct_targets.csv",
+            "evidence_type": "recorded_direct_graph_relationship",
+            "warning": "Excludes enzymes/carriers/transporters. Action direction, subtype benefit and clinical efficacy are not established."
+          }
+        },
+        {
+          "event": "tool_result",
+          "tool": "get_drug_targets",
+          "call_id": "call_9753e4906a3a45b0939c4df0",
+          "result": {
+            "status": "ok",
+            "drug_id": "DB00180",
+            "drug_name": "Flunisolide",
+            "relationship": {
+              "relation": "drug_protein",
+              "display_relation": "target"
+            },
+            "targets": [
+              {
+                "gene_id": "2908",
+                "namespace": "NCBI",
+                "symbols": [
+                  "NR3C1"
+                ],
+                "node_indices": [
+                  509
+                ]
+              }
+            ],
+            "target_count": 1,
+            "source": "reports/compatibility/primekg_direct_targets.csv",
+            "evidence_type": "recorded_direct_graph_relationship",
+            "warning": "Excludes enzymes/carriers/transporters. Action direction, subtype benefit and clinical efficacy are not established."
+          }
+        }
+      ],
+      "tool_checks": {
+        "all_returned_tools_ok": true,
+        "cms2_reviewed_cache_retrieved": true,
+        "complete_29_drug_tie_returned": true,
+        "nr3c1_target_retrieved": true,
+        "crcsc_baseline_and_ablation_available": true
+      },
+      "answer": "## CMS2 top-ranked drugs (cached experiment, run 20261108_173948)\n\nThe top of the CMS2 ranking is a **single tie group of 29 drugs** (all rank_min = 1, identical raw logit 2.2926) — there is **no uniquely \"best\" drug** within it. All are glucocorticoids sharing one recorded target:\n\n- **Shared recorded target: NR3C1** (NCBI 2908), confirmed via direct `drug_protein`/target edges in PrimeKG (e.g., Triamcinolone DB00620, Flunisolide DB00180 — identical single-target result; the other 27 compounds carry the same recorded target ID in the hypothesis file). Enzyme/carrier/transporter roles are excluded from this record.\n- Examples: Prednisolone (DB00860), Prednisone (DB00635), Betamethasone (DB00443), Triamcinolone (DB00620), Cortisone acetate (DB01380), Flunisolide (DB00180), plus ~23 structurally related corticosteroids.\n\nSources: `reports/crcsc_drug_gnn/20261108_173948/candidate_hypotheses.csv.gz`; targets from `reports/compatibility/primekg_direct_targets.csv`.\n\n## How much confidence to place in this ranking — low\n\nFrom `reports/crcsc_drug_gnn/20261108_173948/evaluation_metrics.csv`:\n\n1. **The model underperforms a trivial baseline.** Drug popularity alone achieved test AP ≈ 0.894 vs. the selected model's ≈ 0.823 (ppi_pathway, seed 42). So the ranking may largely reflect how frequently drugs appear in general indication data, not subtype-specific reasoning.\n2. **AP is not efficacy.** It measures held-out general indication recovery (853 known vs. 853 sampled-unknown pairs); it is not accuracy, response probability, or efficacy, and **no CMS therapeutic labels were used** — subtype efficacy was never evaluated.\n3. **Methodological transfer is unvalidated.** The decoder was trained on unsigned disease-gene associations; applying it to signed CMS expression profiles, and inferring drug-action direction, is not established.\n4. **The tie itself signals low resolution.** All 29 compounds score identically, likely because the model simply sees the shared NR3C1 target — so \"which drug ranks highest\" is genuinely undetermined, not just unknown.\n\nThese are cached hypotheses (no fresh inference or GNN training was run here), not validated CRC2/CMS2 treatment recommendations, and no literature review was performed."
+    },
+    {
+      "id": "phenotype_gene_evidence",
+      "title": "Inspect CMS1 expression and phenotype context",
+      "short_title": "Inspect CMS expression",
+      "description": "Separate expression from mutation evidence",
+      "prompt": "Show the three highest-weight CMS1 expression signature genes, look up recorded phenotype associations for the first gene, and explain what these connections do and do not tell us. Keep the answer brief and cite tool source paths.",
+      "events": [
+        {
+          "event": "tool_call",
+          "tool": "get_subtype_genes",
+          "call_id": "call_0c10fb455be445c59a306fee",
+          "arguments": {
+            "gene": "",
+            "limit": 3,
+            "subtype": "CMS1"
+          }
+        },
+        {
+          "event": "tool_result",
+          "tool": "get_subtype_genes",
+          "call_id": "call_0c10fb455be445c59a306fee",
+          "result": {
+            "status": "ok",
+            "data_backend": "crcsc",
+            "subtype": "CMS1",
+            "genes": [
+              {
+                "gene_id": "10855",
+                "namespace": "NCBI",
+                "symbol": "HPSE",
+                "gene_node_index": 1171,
+                "expression_relation": "higher_expression_signature",
+                "signed_weight": 0.0131512373359123,
+                "discovery_adjusted_effect": 1.6234405534250742,
+                "discovery_q": 1.0927762726557631e-39
+              },
+              {
+                "gene_id": "10578",
+                "namespace": "NCBI",
+                "symbol": "GNLY",
+                "gene_node_index": 11105,
+                "expression_relation": "higher_expression_signature",
+                "signed_weight": 0.0130151998015089,
+                "discovery_adjusted_effect": 1.6066475441821109,
+                "discovery_q": 1.6095640135859927e-32
+              },
+              {
+                "gene_id": "6398",
+                "namespace": "NCBI",
+                "symbol": "SECTM1",
+                "gene_node_index": 8696,
+                "expression_relation": "higher_expression_signature",
+                "signed_weight": 0.0119970125285145,
+                "discovery_adjusted_effect": 1.4809584954834984,
+                "discovery_q": 5.9723874292421105e-27
+              }
+            ],
+            "total_genes": 100,
+            "gene_filter": "",
+            "matching_genes": 100,
+            "returned_count": 3,
+            "truncated": true,
+            "profile": "signed",
+            "profile_type": "expression_signature",
+            "cohort_samples": {
+              "discovery": 76,
+              "validation": 15
+            },
+            "source": "reports/crcsc_drug_gnn/20261108_173948/cms_expression_edges.csv",
+            "evidence_type": "discovery_adjusted_expression_association",
+            "warning": "These are relative higher/lower expression associations, not mutation frequencies, causal dependencies, activation scores, or drug-effect directions. No match means absent from the selected signature, not biological absence."
+          }
+        },
+        {
+          "event": "tool_call",
+          "tool": "get_gene_phenotypes",
+          "call_id": "call_47076be451d1437f93716cbd",
+          "arguments": {
+            "gene": "HPSE",
+            "limit": 10
+          }
+        },
+        {
+          "event": "tool_result",
+          "tool": "get_gene_phenotypes",
+          "call_id": "call_47076be451d1437f93716cbd",
+          "result": {
+            "status": "ok",
+            "gene_id": "10855",
+            "namespace": "NCBI",
+            "symbols": [
+              "HPSE"
+            ],
+            "phenotype_count": 0,
+            "phenotypes": [],
+            "returned_count": 0,
+            "truncated": false,
+            "relation": "phenotype_protein",
+            "evidence_type": "recorded_direct_association",
+            "source": "data/processed/primekg/phenotype_disease_gene_edges.csv",
+            "model_uses_phenotype_edges": false,
+            "warning": "Retrieved graph context, not a model explanation or causal/clinical validation. No recorded association means unknown, not a negative finding."
+          }
+        }
+      ],
+      "tool_checks": {
+        "all_returned_tools_ok": true,
+        "cms1_expression_profile_retrieved": true,
+        "three_expression_genes_retrieved": true,
+        "expression_not_mutation_counts": true,
+        "hpse_no_recorded_direct_phenotypes": true
+      },
+      "answer": "## Top-3 CMS1 expression signature genes\nFrom `reports/crcsc_drug_gnn/20261108_173948/cms_expression_edges.csv` (signed, discovery-adjusted expression associations; cohort: 76 discovery / 15 validation samples):\n\n| Rank | Gene | Relation | Signed weight | Adj. effect | Discovery q |\n|---|---|---|---|---|---|\n| 1 | **HPSE** | higher_expression_signature | +0.0132 | +1.623 | 1.09e-39 |\n| 2 | **GNLY** | higher_expression_signature | +0.0130 | +1.607 | 1.61e-32 |\n| 3 | **SECTM1** | higher_expression_signature | +0.0120 | +1.481 | 5.97e-27 |\n\nAll three are *higher-expression* signature members of the 100-gene CMS1 profile (result truncated; 100 total).\n\n## Phenotype lookup for HPSE\nFrom `data/processed/primekg/phenotype_disease_gene_edges.csv`: **0 recorded `phenotype_protein` associations for HPSE**. Per the tool's own caveat, this means HPSE's phenotype links are **unknown** in this graph — it is *not* evidence of a negative finding.\n\n## What these connections tell us — and what they don't\n\n**What they do tell us:**\n- HPSE, GNLY, SECTM1 carry the **largest signed expression weights** in this experiment's CMS1 signature, and their higher-expression association in CMS1 tumors was strongly supported in the discovery cohort (very small q values). These are cohort expression observations, not mutation counts or patient counts.\n- The drug-ranking model uses the PPI/pathway graph only (`model_uses_phenotype_edges: False`); the phenotype lookup is separate recorded graph context, not part of the prediction pipeline.\n\n**What they do not tell us:**\n- **No causality or biological function claim** — these are relative higher/lower expression associations, not mutation frequencies, causal dependencies, activation scores, or drug-effect directions.\n- **The HPSE empty result is not a negative result** — it just means no recorded association exists in this knowledge graph; it does not mean HPSE is phenotypically irrelevant.\n- **Not model explanations** — the phenotype edges were not used by the trained model, so this lookup does not explain why any drug was or wasn't ranked for CMS1.\n- **No therapeutic or clinical claim** — these signature weights are not drug targets, not response predictors, and the CMS1 label itself is a cached expression-defined grouping, not a treatment assignment.\n\nSources cited inline above; no literature review was performed."
+    }
+  ],
+  "source_sha256": {
+    "data/processed/primekg/nodes.csv": "1b0a1999e5153ecac45d24fc619d0b7f6750eb6bba247e6339979371c365500e",
+    "data/processed/primekg/phenotype_disease_gene_edges.csv": "b6fe1b059259aab23b53ab01f8628e55ce475ba6975e5e595001ec8a26225e3f",
+    "reports/compatibility/primekg_direct_targets.csv": "5cb1f41a2780b988df2b0398a41a9082915221227f6b0469e00c7fedc6c5c632",
+    "reports/crcsc_drug_gnn/20261108_173948/manifest.json": "9850a30ca8143b18141f34337b27b38c9cadf093728117f5ad17047c1fc7bc5d",
+    "reports/crcsc_drug_gnn/20261108_173948/evaluation_metrics.csv": "b7de4961b9627ae79c237748446762848372d83df59d9123b52635cc8cd2fb7d",
+    "reports/crcsc_drug_gnn/20261108_173948/candidate_hypotheses.csv.gz": "72390ec10c1614e889e29c4026537dfcece1a3956227268cbf40b64a28f14b58",
+    "reports/crcsc_drug_gnn/20261108_173948/cms_expression_edges.csv": "831b33e1e662dc872dcb5a61daf76d95211340a2bf4c0f1e4bbf921ad58aa889",
+    "reports/crcsc/20261108_172638/cohort_counts.csv": "63a9b41f6c775830a9736ecfa26d7dd7dbff341fd624e8ff0a583352f930c68f"
+  },
+  "source_hashes_unchanged": true,
+  "all_tool_checks_passed": true
+}

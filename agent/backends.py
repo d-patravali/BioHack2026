@@ -22,7 +22,7 @@ def catalog(backend):
     if backend == 'crcsc':
         return {'id': backend, 'label': 'CRCSC · CMS expression', 'subtypes': list(CMS_SUBTYPES),
                 'gnn_condition': 'ppi_pathway', 'gnn_label': 'PPI + pathway GNN',
-                'profile_type': 'signed expression signature', 'recorded_available': False}
+                'profile_type': 'signed expression signature', 'recorded_available': True}
     return {'id': backend, 'label': 'ECoGraph · GI genomic (original)',
             'subtypes': ['GI.CIN', 'GI.HM-indel', 'GI.HM-SNV', 'GI.GS'],
             'gnn_condition': 'target_only', 'gnn_label': 'Target-only GNN',

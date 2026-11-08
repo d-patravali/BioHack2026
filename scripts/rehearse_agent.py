@@ -43,7 +43,17 @@ SCENARIOS = [
 ]
 
 
-def artifact_hashes():
+CMS_SCENARIOS = [
+    {'id': 'candidate_audit', 'title': 'Investigate the cached CMS2 drug ranking',
+     'short_title': 'Why do these drugs tie?', 'description': 'Inspect CMS2 targets and model controls',
+     'prompt': 'Which drugs does the model rank highest for CMS2, and how much confidence should I place in that ranking? Check the recorded targets and model evaluation. Keep the answer brief and cite tool source paths.'},
+    {'id': 'phenotype_gene_evidence', 'title': 'Inspect CMS1 expression and phenotype context',
+     'short_title': 'Inspect CMS expression', 'description': 'Separate expression from mutation evidence',
+     'prompt': 'Show the three highest-weight CMS1 expression signature genes, look up recorded phenotype associations for the first gene, and explain what these connections do and do not tell us. Keep the answer brief and cite tool source paths.'},
+]
+
+
+def artifact_hashes(backend='ecograph'):
     paths = [
         "data/processed/primekg/nodes.csv",
         "data/processed/primekg/phenotype_disease_gene_edges.csv",
@@ -52,6 +62,14 @@ def artifact_hashes():
         "reports/crc_experiments/20261108_034016/tie_aware_top_candidates.csv",
         "reports/crc_experiments/20261108_034016/profile_gene_evidence.csv.gz",
     ]
+    if backend == 'crcsc':
+        paths = paths[:3] + [
+            'reports/crcsc_drug_gnn/20261108_173948/manifest.json',
+            'reports/crcsc_drug_gnn/20261108_173948/evaluation_metrics.csv',
+            'reports/crcsc_drug_gnn/20261108_173948/candidate_hypotheses.csv.gz',
+            'reports/crcsc_drug_gnn/20261108_173948/cms_expression_edges.csv',
+            'reports/crcsc/20261108_172638/cohort_counts.csv',
+        ]
     hashes = {}
     for relative in paths:
         digest = hashlib.sha256()
@@ -62,12 +80,33 @@ def artifact_hashes():
     return hashes
 
 
-def verify_tool_evidence(scenario_id, events):
+def verify_tool_evidence(scenario_id, events, backend='ecograph'):
     """Check tool execution/results, not the truthfulness of arbitrary LLM prose."""
     outputs = [e for e in events if e["event"] == "tool_result"]
     def values(name):
         return [e["result"] for e in outputs if e["tool"] == name and isinstance(e["result"], dict)]
-    ok = {"all_returned_tools_ok": all(isinstance(e["result"], dict) and e["result"].get("status") == "ok" for e in outputs)}
+    ok = {"all_returned_tools_ok": bool(outputs) and all(isinstance(e["result"], dict) and e["result"].get("status") == "ok" for e in outputs)}
+    if backend == 'crcsc':
+        predictions = values('get_drug_predictions')
+        evaluations = values('get_model_evaluation') + [p['evaluation'] for p in predictions if 'evaluation' in p]
+        if scenario_id == 'candidate_audit':
+            targets = values('get_drug_targets')
+            ok.update({
+                'cms2_reviewed_cache_retrieved': any(p.get('subtype') == 'CMS2' and p.get('data_backend') == 'crcsc' and p.get('profile') == 'signed' for p in predictions),
+                'complete_29_drug_tie_returned': any(p.get('returned_count') == 29 and p.get('fresh_inference') is False for p in predictions),
+                'nr3c1_target_retrieved': any(any(t['gene_id'] == '2908' for t in p.get('targets', [])) for p in targets),
+                'crcsc_baseline_and_ablation_available': any({'ppi_pathway', 'drug_only', 'drug_popularity'} <= p.get('conditions', {}).keys() and p.get('data_backend') == 'crcsc' for p in evaluations),
+            })
+        else:
+            profiles = values('get_subtype_genes')
+            genes = [g for p in profiles for g in p.get('genes', [])]
+            ok.update({
+                'cms1_expression_profile_retrieved': any(p.get('subtype') == 'CMS1' and p.get('data_backend') == 'crcsc' and p.get('profile_type') == 'expression_signature' for p in profiles),
+                'three_expression_genes_retrieved': {'10855','10578','6398'} <= {g.get('gene_id') for g in genes},
+                'expression_not_mutation_counts': bool(genes) and all('signed_weight' in g and 'discovery_q' in g and 'observed_samples' not in g and 'frequency' not in g for g in genes),
+                'hpse_no_recorded_direct_phenotypes': any(p.get('gene_id') == '10855' and p.get('phenotype_count') == 0 and p.get('model_uses_phenotype_edges') is False for p in values('get_gene_phenotypes')),
+            })
+        return ok
     if scenario_id == "candidate_audit":
         predictions = values("get_drug_predictions")
         targets = values("get_drug_targets")
@@ -97,6 +136,7 @@ def verify_tool_evidence(scenario_id, events):
 def render(record):
     lines = ["# Recorded live agent rehearsal", "",
         f"Recorded UTC: {record['recorded_utc']}", f"Provider/model: {record['provider']} / {record['model']}",
+        f"Data backend: {record.get('data_backend', 'ecograph')}",
         "", "This is a saved live tool-calling session, not a fresh model inference run or a systematic agent evaluation.",
         "The GNN scores are cached. Replay requires no network or credentials.", ""]
     for scenario in record["scenarios"]:
@@ -115,13 +155,13 @@ def render(record):
     return "\n".join(lines)
 
 
-async def record_live(output):
+async def record_live(output, backend='ecograph'):
     from agent.config import load_settings, NEBIUS_BASE_URL
     from agent.runtime import DebugHooks, create_agent, create_client, run_turn
     from agent.__main__ import error_message
 
     settings = load_settings()
-    before = artifact_hashes()
+    before = artifact_hashes(backend)
     output.mkdir(parents=True, exist_ok=False)
     class RecordingHooks(DebugHooks):
         def __init__(self):
@@ -142,7 +182,7 @@ async def record_live(output):
                 "call_id": getattr(context, "tool_call_id", None), "result": self.cleaned(result)})
 
     record = {"recorded_utc": datetime.now(timezone.utc).isoformat(), "provider": "Nebius Token Factory",
-        "model": settings.model, "endpoint": NEBIUS_BASE_URL+"chat/completions",
+        "data_backend": backend, "model": settings.model, "endpoint": NEBIUS_BASE_URL+"chat/completions",
         "gnn_backend": "cached experiment, not fresh GNN inference", "scenarios": [], "source_sha256": before}
     def save():
         # A final pass also redacts a key accidentally echoed by the remote model.
@@ -151,9 +191,9 @@ async def record_live(output):
         safe_record = json.loads(serialized)
         (output/"walkthrough.md").write_text(render(safe_record))
     async with create_client(settings) as client:
-        agent = create_agent(settings, client)
+        agent = create_agent(settings, client, backend=backend)
         history = []
-        for scenario in SCENARIOS:
+        for scenario in (CMS_SCENARIOS if backend == 'crcsc' else SCENARIOS):
             print(scenario["title"], flush=True)
             hooks = RecordingHooks()
             entry = {**scenario, "events": hooks.events, "tool_checks": {}}
@@ -166,11 +206,11 @@ async def record_live(output):
             except Exception as error:
                 entry["error"] = error_message(error)
                 print(entry["error"], file=sys.stderr)
-            entry["tool_checks"] = verify_tool_evidence(scenario["id"], hooks.events)
+            entry["tool_checks"] = verify_tool_evidence(scenario["id"], hooks.events, backend)
             save()
             if "error" in entry:
                 break
-    record["source_hashes_unchanged"] = before == artifact_hashes()
+    record["source_hashes_unchanged"] = before == artifact_hashes(backend)
     record["all_tool_checks_passed"] = len(record["scenarios"]) == 2 and all(
         all(s["tool_checks"].values()) and "error" not in s for s in record["scenarios"])
     save()
@@ -183,6 +223,7 @@ def main():
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument("--live", action="store_true", help="Contacts Nebius and may incur API charges.")
     mode.add_argument("--replay", type=Path, help="Read a saved JSON transcript offline; makes no API calls.")
+    parser.add_argument("--backend", choices=["ecograph", "crcsc"], default="ecograph", help="Select the backend to record; replay uses its saved metadata.")
     parser.add_argument("--output", type=Path, help="New recording directory, never overwrite an existing run.")
     args = parser.parse_args()
     if args.replay:
@@ -191,7 +232,7 @@ def main():
     output = args.output or ROOT/"docs/demo/recordings"/datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
     if output.exists():
         parser.error("Recording directory must be new")
-    return asyncio.run(record_live(output))
+    return asyncio.run(record_live(output, args.backend))
 
 
 if __name__ == "__main__":

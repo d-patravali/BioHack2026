@@ -44,3 +44,22 @@ actual recorded response rather than rewriting it to match the correction.
 The results do not demonstrate GNN superiority, clinical efficacy, literature
 novelty, reduced hallucination rates, or a phenotype-aware trained GNN. Present
 the engineering prototype and its measured limitations directly.
+
+## CRCSC CMS recording
+
+The new backend has a separate [actual live recording](recordings/20261108_181822/walkthrough.md),
+[structured transcript](recordings/20261108_181822/transcript.json), and
+[presenter review](recordings/20261108_181822/REVIEW.md). In the UI, select Recorded
+and CRCSC, then choose either guided investigation. Both scenarios passed their
+tool-evidence checks (five and two calls), with unchanged source-artifact hashes.
+Prose is preserved rather than rewritten: drug-class/structural claims were not
+provided by tools and are flagged as unverified. This is not literature validation.
+
+```sh
+python scripts/rehearse_agent.py --replay docs/demo/recordings/20261108_181822/transcript.json
+# Optional new live recording (contacts Nebius):
+python scripts/rehearse_agent.py --backend crcsc --live
+```
+
+The earlier ECoGraph recording remains unchanged. Incomplete recording attempts
+are not served by the UI.

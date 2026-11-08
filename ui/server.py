@@ -17,10 +17,11 @@ from agent.repository import query
 from agent.backends import BACKENDS, catalog, make_repository, validate_backend
 from agent.runtime import DebugHooks, create_agent, create_client, run_turn
 from agent.__main__ import error_message
-from scripts.rehearse_agent import SCENARIOS
+from scripts.rehearse_agent import SCENARIOS, CMS_SCENARIOS
 
 STATIC = Path(__file__).resolve().parent / "static"
 RECORDING = PROJECT_ROOT / "docs/demo/recordings/20261108_042554/transcript.json"
+CMS_RECORDING = PROJECT_ROOT / "docs/demo/recordings/20261108_181822/transcript.json"
 
 
 def configuration():
@@ -35,9 +36,16 @@ def event(payload):
     return "data: " + json.dumps(payload, ensure_ascii=False) + "\n\n"
 
 
-def read_recording():
+def read_recording(backend='ecograph'):
+    path = CMS_RECORDING if backend == 'crcsc' else RECORDING
     try:
-        return json.loads(RECORDING.read_text())
+        record = json.loads(path.read_text())
+        if (not isinstance(record, dict)
+                or record.get('data_backend', 'ecograph') != backend
+                or record.get('all_tool_checks_passed') is not True
+                or record.get('source_hashes_unchanged') is not True):
+            return None
+        return record
     except (OSError, ValueError):
         return None
 
@@ -65,13 +73,7 @@ async def live_answer(prompt, history, emit, backend='ecograph'):
 
 def scenarios(backend):
     if backend == 'crcsc':
-        return [
-            {'id': 'candidate_audit', 'title': 'Inspect CMS2 drug hypotheses',
-             'short_title': 'Why do these drugs tie?', 'description': 'Inspect CMS2 targets and model controls',
-             'prompt': 'Retrieve the top five cached CMS2 drug hypotheses, inspect their shared targets and model evaluation, and explain the ties and limitations. Do not claim efficacy or literature verification.'},
-            {'id': 'phenotype_gene_evidence', 'title': 'Inspect CMS1 expression context',
-             'short_title': 'Inspect CMS expression', 'description': 'Separate expression from mutation evidence',
-             'prompt': 'Retrieve the three largest-weight CMS1 expression signature genes. Report higher/lower expression, signed weights and discovery FDR; retrieve phenotype context for the first gene. Separate recorded context from causal or therapeutic evidence.'}]
+        return CMS_SCENARIOS
     titles = [('Why do these drugs tie?', 'Inspect candidates, targets & controls'),
               ('Trace phenotype evidence', 'Connect APC observations & annotations')]
     return [{**s, 'short_title': titles[i][0], 'description': titles[i][1]} for i,s in enumerate(SCENARIOS)]
@@ -96,11 +98,11 @@ def create_app(answer=live_answer):
             validate_backend(backend)
         except ValueError:
             return JSONResponse({'error': 'Choose ecograph or crcsc'}, status_code=400)
-        recording = read_recording() if backend == 'ecograph' else None
+        recording = read_recording(backend)
         evaluation = await asyncio.to_thread(query, repositories[backend], 'get_model_evaluation')
         return JSONResponse({**configuration(), 'provider': 'Nebius Token Factory',
             'backend': backend, 'backend_catalog': [catalog(b) for b in BACKENDS],
-            'selected_backend': catalog(backend), 'recorded_available': recording is not None,
+            'selected_backend': {**catalog(backend), 'recorded_available': recording is not None}, 'recorded_available': recording is not None,
             'recorded_utc': recording.get('recorded_utc') if recording else None,
             'evaluation': evaluation, 'scenarios': scenarios(backend)})
 
@@ -147,8 +149,6 @@ def create_app(answer=live_answer):
             validate_backend(backend)
         except ValueError:
             return JSONResponse({'error': 'Choose ecograph or crcsc'}, status_code=400)
-        if body.get('mode') == 'recorded' and backend != 'ecograph':
-            return JSONResponse({'error': 'Recorded walkthroughs belong to ECoGraph. Select Live agent for CRCSC.'}, status_code=400)
         session_id, mode = body.get("session_id"), body.get("mode")
         if not isinstance(session_id, str) or not re.fullmatch(r"[A-Za-z0-9-]{1,64}", session_id):
             return JSONResponse({"error": "Invalid session identifier"}, status_code=400)
@@ -164,17 +164,18 @@ def create_app(answer=live_answer):
         if not isinstance(prompt, str) or not 1 <= len(prompt.strip()) <= 4000:
             return JSONResponse({"error": "Enter a prompt of 1–4000 characters"}, status_code=400)
         if mode == "recorded":
-            recording = read_recording()
+            recording = read_recording(backend)
             recorded = next((s for s in (recording or {}).get("scenarios", []) if s["id"] == scenario_id), None)
             if recorded is None:
                 return JSONResponse({"error": "Select an available recorded walkthrough"}, status_code=400)
             async def replay():
-                yield event({"type": "start", "mode": "recorded", "recorded_utc": recording["recorded_utc"]})
+                yield event({"type": "start", "mode": "recorded", "backend": backend, "recorded_utc": recording["recorded_utc"]})
                 for item in recorded["events"]:
                     yield event({"type": item["event"], **{k: v for k, v in item.items() if k != "event"}})
                     await asyncio.sleep(.08)
                 yield event({"type": "answer", "text": recorded.get("answer", "No recorded answer available"),
-                    "mode": "recorded", "review_note": "Mutation frequencies are model inputs; phenotype edges are retrieved separately. Neither alone is a faithful attribution of a drug score."})
+                    "mode": "recorded", "backend": backend,
+                    "review_note": (("The tools verify the shared NR3C1 target, not the saved answer's drug-class or structural-similarity descriptions; those descriptions remain unverified. No efficacy or literature verification is established." if scenario_id == 'candidate_audit' else "Signed expression weights are model inputs, not mutation frequencies or drug-action directions. The drug encoder includes targets and disease–gene context alongside PPI/pathways; phenotype annotations are retrieved separately and are not model explanations.") if backend == 'crcsc' else "Mutation frequencies are model inputs; phenotype edges are retrieved separately. Neither alone is a faithful attribution of a drug score.")})
                 yield event({"type": "done"})
             return StreamingResponse(replay(), media_type="text/event-stream", headers={"Cache-Control": "no-store"})
         if not configuration()["live_available"]:

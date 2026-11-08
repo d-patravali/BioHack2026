@@ -19,7 +19,7 @@ Open **http://127.0.0.1:8765**. Use `python -m ui --port 8766` if the port is oc
 2. Choose **Explore APC evidence** to show subtype mutation observations and recorded phenotype–gene annotations.
 3. Switch to **Live agent** to ask your own questions or rerun a guided prompt. Live mode requires `NEBIUS_API_KEY` and `NEBIUS_MODEL` in the root `.env`. It uses the existing Nebius Chat Completions configuration, never an OpenAI endpoint. Model answers can vary.
 
-Recorded mode replays the actual saved Nebius conversation at `docs/demo/recordings/20261108_042554/transcript.json`; it makes no provider calls and accepts only the two recorded scenarios. The presenter note clarifies model inputs versus retrieved phenotype evidence. A recorded response is not a fresh model run.
+Recorded mode replays an actual saved Nebius conversation for the selected backend: ECoGraph at `docs/demo/recordings/20261108_042554/transcript.json`, or CRCSC at `docs/demo/recordings/20261108_181822/transcript.json`. It makes no provider calls and accepts only that backend's two recorded scenarios. The presenter note clarifies model inputs versus retrieved phenotype evidence. A recorded response is not a fresh model run.
 
 Live mode streams tool start/result events and the final response. Conversation history stays in server memory until reset or shutdown. Expandable tool traces show each call and its returned data within the conversation. Switching modes resets conversation history.
 
@@ -46,9 +46,11 @@ Files: `server.py` provides HTTP/event streaming; `__main__.py` launches Uvicorn
 
 ## Select a data backend
 
-In **Live agent** mode, the **Data backend** selector chooses the original
-ECoGraph GI workflow or CRCSC CMS expression workflow. Switching clears history
-and updates the evaluation panel and guided prompts. Recorded mode returns to
-ECoGraph because only those original recordings exist. CRCSC exposes cached
-seed42 PPI/pathway signed-profile scores and expression signatures; there is no
-fresh inference or literature verification. See [backend guide](../agent/BACKENDS.md).
+The **Data backend** selector works in both modes. Choose **Recorded** and
+**CRCSC · CMS expression**, then click **Why do these drugs tie?** for CMS2 or
+**Inspect CMS expression** for the CMS1 gene/phenotype walkthrough. Offline replay
+requires no credentials. Live mode uses the same backend with new Nebius answers.
+Switching backend clears history, updates metrics/prompts, and never substitutes
+the other dataset's recording. ECoGraph remains the default and keeps its original
+recordings. All GNN scores remain cached; no literature or efficacy verification
+is implied. Read the CRCSC recording's `REVIEW.md` for explicit prose caveats.

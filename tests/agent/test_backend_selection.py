@@ -108,12 +108,12 @@ class BackendHTTPTests(unittest.TestCase):
         with TestClient(create_app()) as client:
             old=client.get('/api/bootstrap').json();new=client.get('/api/bootstrap?backend=crcsc').json()
             self.assertEqual(old['backend'],'ecograph');self.assertTrue(old['recorded_available'])
-            self.assertEqual(new['backend'],'crcsc');self.assertFalse(new['recorded_available'])
+            self.assertEqual(new['backend'],'crcsc');self.assertTrue(new['recorded_available'])
             self.assertEqual(new['selected_backend']['subtypes'],['CMS1','CMS2','CMS3','CMS4'])
             self.assertIn('ppi_pathway',new['evaluation']['conditions'])
             self.assertNotIn('target_only',new['evaluation']['conditions'])
             self.assertEqual(client.get('/api/bootstrap?backend=bad').status_code,400)
-            self.assertEqual(client.post('/api/chat',json={'session_id':'one','mode':'recorded','backend':'crcsc','scenario_id':'candidate_audit'}).status_code,400)
+            self.assertEqual(client.post('/api/chat',json={'session_id':'one','mode':'recorded','backend':'crcsc','scenario_id':'candidate_audit'}).status_code,200)
 
     def test_conversation_cannot_change_backend_without_reset(self):
         calls=[]

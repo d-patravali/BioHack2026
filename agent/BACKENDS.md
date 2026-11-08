@@ -17,11 +17,11 @@ python -m agent --backend crcsc
 python -m ui
 ```
 
-Open http://127.0.0.1:8765. Select **Live agent**, then choose a **Data backend**.
+Open http://127.0.0.1:8765. Choose a **Data backend** in either mode.
 Backend changes clear conversation history and update the subtype catalog,
-guided prompts, and evaluation panel. Recorded mode automatically returns to
-ECoGraph: the saved recordings belong to that earlier experiment. There is no
-CRCSC recording masquerading as a live or original ECoGraph result.
+guided prompts, and evaluation panel. Recorded mode replays the saved conversation for the selected backend without
+network access. CRCSC has its own actual Nebius recording, separate from the
+original ECoGraph recording; neither is presented as live inference.
 
 Sample CRCSC prompt:
 
@@ -37,7 +37,7 @@ Follow-up:
 | Molecular evidence | Mutation observation frequencies and patient counts | Higher/lower relative expression, signed weights, discovery FDR |
 | Reviewed run | `reports/crc_experiments/20261108_034016` | `reports/crcsc_drug_gnn/20261108_173948` |
 | Cached model | seed42, target_only, frequency | seed42, ppi_pathway, signed |
-| Saved offline walkthroughs | Two original recordings | None |
+| Saved offline walkthroughs | Two original scenarios | Two CRCSC scenarios |
 
 All six tool names are retained. Each agent instance binds tools to a fixed
 backend; there is no mutable process-wide selector. Wrong-catalog subtype names
@@ -92,3 +92,21 @@ Tests cover both catalogs, fixed source/model selection, ties, expression semant
 missing-data behavior, per-agent tool isolation, Nebius Chat Completions routing,
 HTTP history isolation, and original recorded replay. Provider calls are mocked;
 these checks do not establish agent scientific truthfulness or drug efficacy.
+
+## CRCSC recorded conversation
+
+Select **Recorded**, choose **CRCSC · CMS expression**, then click either guided
+investigation. The saved session is at
+`docs/demo/recordings/20261108_181822/transcript.json`; read its `REVIEW.md` for
+prose qualifications. Tool evidence checks passed; all graph/results hashes stayed
+unchanged. Drug-class/structural-similarity descriptions in the saved answer were
+not supplied by tools and remain unverified; the replay flags them explicitly.
+
+To record a new live session (uses Nebius and may incur charges):
+
+```sh
+python scripts/rehearse_agent.py --backend crcsc --live
+```
+
+Recordings are pinned by backend in the UI. An incomplete or wrong-backend
+recording is unavailable, never silently replaced by the other dataset's session.
