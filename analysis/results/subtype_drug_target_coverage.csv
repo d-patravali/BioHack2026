@@ -1,0 +1,5 @@
+basis,subtype,mapped_genes,mapped_unique_ncbi_ids,mapped_genes_with_direct_targets,direct_target_pct_of_mapped_genes,unique_connected_drugs,unique_direct_drug_gene_pairs,validated_enriched_genes_with_targets
+supplementary_binary_mutation_matrix,GI.CIN,9909,9909,1555,15.692804521142396,4231,10657,
+supplementary_binary_mutation_matrix,GI.HM-indel,15829,15829,2461,15.547412976182954,5373,15163,
+supplementary_binary_mutation_matrix,GI.HM-SNV,11603,11603,1819,15.676980091355684,4667,12111,
+supplementary_binary_mutation_matrix,GI.GS,3779,3779,601,15.903678221751786,2081,4395,

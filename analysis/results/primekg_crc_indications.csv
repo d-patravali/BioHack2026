@@ -1,0 +1,24 @@
+drug_id,drug_name,disease_id,disease_name
+DB00762,Irinotecan,41448,metastasis from malignant tumor of colon
+DB08885,Aflibercept,41448,metastasis from malignant tumor of colon
+DB08896,Regorafenib,41448,metastasis from malignant tumor of colon
+DB00526,Oxaliplatin,41448,metastasis from malignant tumor of colon
+DB00544,Fluorouracil,41448,metastasis from malignant tumor of colon
+DB01101,Capecitabine,41448,metastasis from malignant tumor of colon
+DB00432,Trifluridine,21063,malignant colon neoplasm
+DB00432,Trifluridine,5575,colorectal cancer
+DB00432,Trifluridine,18513,squamous cell carcinoma of colon
+DB09010,Carmofur,21063,malignant colon neoplasm
+DB09010,Carmofur,5575,colorectal cancer
+DB09010,Carmofur,18513,squamous cell carcinoma of colon
+DB00544,Fluorouracil,21063,malignant colon neoplasm
+DB00544,Fluorouracil,5575,colorectal cancer
+DB00544,Fluorouracil,18513,squamous cell carcinoma of colon
+DB00002,Cetuximab,21063,malignant colon neoplasm
+DB00002,Cetuximab,5575,colorectal cancer
+DB00002,Cetuximab,18513,squamous cell carcinoma of colon
+DB09343,Tipiracil,21063,malignant colon neoplasm
+DB09343,Tipiracil,5575,colorectal cancer
+DB09343,Tipiracil,18513,squamous cell carcinoma of colon
+DB01269,Panitumumab,41447,metastatic malignant neoplasm in the colon
+DB00112,Bevacizumab,41447,metastatic malignant neoplasm in the colon

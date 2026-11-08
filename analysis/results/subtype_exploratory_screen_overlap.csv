@@ -1,0 +1,7 @@
+basis,subtype_a,subtype_b,genes_a,genes_b,overlap,union,jaccard,status
+exploratory_screen_not_validated_enrichment,GI.CIN,GI.HM-indel,,,,,,unavailable: burden-screen guardrails failed
+exploratory_screen_not_validated_enrichment,GI.CIN,GI.HM-SNV,,,,,,unavailable: burden-screen guardrails failed
+exploratory_screen_not_validated_enrichment,GI.CIN,GI.GS,1.0,0.0,0.0,1.0,0.0,exploratory only
+exploratory_screen_not_validated_enrichment,GI.HM-indel,GI.HM-SNV,,,,,,unavailable: burden-screen guardrails failed
+exploratory_screen_not_validated_enrichment,GI.HM-indel,GI.GS,,,,,,unavailable: burden-screen guardrails failed
+exploratory_screen_not_validated_enrichment,GI.HM-SNV,GI.GS,,,,,,unavailable: burden-screen guardrails failed

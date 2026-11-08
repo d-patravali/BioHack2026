@@ -1,0 +1,2 @@
+raw_export_gene_vertices,eligible_ecograph_genes,primekg_gene_nodes,unique_primekg_genes,matching_ecograph_genes,matching_unique_ncbi_ids,ecograph_mapping_pct,raw_export_mapping_pct,primekg_in_ecograph_pct,ambiguous_ecograph_genes,unmatched_eligible_genes
+21333,21332,27671,27610,18909,18909,88.64147759234952,88.63732245816341,68.48605577689243,0,2423

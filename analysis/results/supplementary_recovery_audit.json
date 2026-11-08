@@ -1,0 +1,12 @@
+{
+  "status": "verified_supplementary_reconstruction",
+  "matrix_path": "ECoGraph/data/coad_mut_data.csv",
+  "samples": 404,
+  "genes": 21332,
+  "observations_all_samples": 151776,
+  "typed_samples": 339,
+  "untyped_samples": 65,
+  "matrix_sha256": "4b0b19739687b42b7f0e9405bf26558ea7f56ec957033e3c5058e904b3fd836e",
+  "subtype_sha256": "33adf55ebe727e68b8ec073eac36d400308fb3b5e53d4531fb69af25c75dda9a",
+  "duplicate_patient_records": 0
+}

@@ -1,0 +1,276 @@
+[
+  {
+    "path": "kg.csv",
+    "bytes": 981751236,
+    "sha256": "0a5a010fcd88dcec572a573d98c26c1c244a11567092b6161d3ded611cfb5c69",
+    "columns": [
+      "relation",
+      "display_relation",
+      "x_index",
+      "x_id",
+      "x_type",
+      "x_name",
+      "x_source",
+      "y_index",
+      "y_id",
+      "y_type",
+      "y_name",
+      "y_source"
+    ],
+    "representative_records": [
+      {
+        "relation": "protein_protein",
+        "display_relation": "ppi",
+        "x_index": "0",
+        "x_id": "9796",
+        "x_type": "gene/protein",
+        "x_name": "PHYHIP",
+        "x_source": "NCBI",
+        "y_index": "8889",
+        "y_id": "56992",
+        "y_type": "gene/protein",
+        "y_name": "KIF15",
+        "y_source": "NCBI"
+      },
+      {
+        "relation": "protein_protein",
+        "display_relation": "ppi",
+        "x_index": "1",
+        "x_id": "7918",
+        "x_type": "gene/protein",
+        "x_name": "GPANK1",
+        "x_source": "NCBI",
+        "y_index": "2798",
+        "y_id": "9240",
+        "y_type": "gene/protein",
+        "y_name": "PNMA1",
+        "y_source": "NCBI"
+      },
+      {
+        "relation": "protein_protein",
+        "display_relation": "ppi",
+        "x_index": "2",
+        "x_id": "8233",
+        "x_type": "gene/protein",
+        "x_name": "ZRSR2",
+        "x_source": "NCBI",
+        "y_index": "5646",
+        "y_id": "23548",
+        "y_type": "gene/protein",
+        "y_name": "TTC33",
+        "y_source": "NCBI"
+      }
+    ]
+  },
+  {
+    "path": "ECoGraph/data/neptune_csv/vertices_gene.csv",
+    "bytes": 720622,
+    "sha256": "356ad824abcc38e140a1fd2208da189c77e4a9e8430133157a8b3d0242ca1424",
+    "columns": [
+      "~id",
+      "~label",
+      "symbol:String",
+      "exp_hr_coeff:String",
+      "hr_pval:String"
+    ],
+    "representative_records": [
+      {
+        "~id": "gene:5S_rRNA",
+        "~label": "Gene",
+        "symbol:String": "5S_rRNA",
+        "exp_hr_coeff:String": "N/A",
+        "hr_pval:String": "N/A"
+      },
+      {
+        "~id": "gene:A1BG",
+        "~label": "Gene",
+        "symbol:String": "A1BG",
+        "exp_hr_coeff:String": "N/A",
+        "hr_pval:String": "N/A"
+      },
+      {
+        "~id": "gene:A1CF",
+        "~label": "Gene",
+        "symbol:String": "A1CF",
+        "exp_hr_coeff:String": "N/A",
+        "hr_pval:String": "N/A"
+      }
+    ]
+  },
+  {
+    "path": "ECoGraph/data/neptune_csv/vertices_subtype.csv",
+    "bytes": 110,
+    "sha256": "8f71bd515a5734254a15220b12ab0578ef684ea49759e7df171889939bbf635a",
+    "columns": [
+      "~id",
+      "~label"
+    ],
+    "representative_records": [
+      {
+        "~id": "subtype:GI.CIN",
+        "~label": "Subtype"
+      },
+      {
+        "~id": "subtype:GI.HM-indel",
+        "~label": "Subtype"
+      },
+      {
+        "~id": "subtype:GI.GS",
+        "~label": "Subtype"
+      }
+    ]
+  },
+  {
+    "path": "ECoGraph/data/neptune_csv/vertices_sample.csv",
+    "bytes": 18613,
+    "sha256": "fcfe29d039be379563d2af3b48d2ee88aa325c2d944c57b6f0e0bbac2f7b0bf4",
+    "columns": [
+      "~id",
+      "~label",
+      "patient_barcode:String",
+      "sex:String"
+    ],
+    "representative_records": [
+      {
+        "~id": "sample:TCGA-3L-AA1B",
+        "~label": "Sample",
+        "patient_barcode:String": "TCGA-3L-AA1B",
+        "sex:String": "FEMALE"
+      },
+      {
+        "~id": "sample:TCGA-4N-A93T",
+        "~label": "Sample",
+        "patient_barcode:String": "TCGA-4N-A93T",
+        "sex:String": "MALE"
+      },
+      {
+        "~id": "sample:TCGA-4T-AA8H",
+        "~label": "Sample",
+        "patient_barcode:String": "TCGA-4T-AA8H",
+        "sex:String": "FEMALE"
+      }
+    ]
+  },
+  {
+    "path": "ECoGraph/data/neptune_csv/vertices_age.csv",
+    "bytes": 63,
+    "sha256": "01fc9305194c0889526544e5b436121e10bf4beaa76eed2ea24980594b82a377",
+    "columns": [
+      "~id",
+      "~label",
+      "age_bucket:String"
+    ],
+    "representative_records": [
+      {
+        "~id": "age:<=50",
+        "~label": "Age",
+        "age_bucket:String": "<=50"
+      },
+      {
+        "~id": "age:>50",
+        "~label": "Age",
+        "age_bucket:String": ">50"
+      }
+    ]
+  },
+  {
+    "path": "ECoGraph/data/neptune_csv/edges_has_gene_part001.csv",
+    "bytes": 2,
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "columns": [],
+    "representative_records": []
+  },
+  {
+    "path": "ECoGraph/data/neptune_csv/edges_has_subtype.csv",
+    "bytes": 26323,
+    "sha256": "3a022bb682d1ce157393ddacaea37ea3f6d38ef8302bb85f33df1838eb2c877c",
+    "columns": [
+      "~id",
+      "~from",
+      "~to",
+      "~label"
+    ],
+    "representative_records": [
+      {
+        "~id": "e:sample:TCGA-3L-AA1B:GI.CIN",
+        "~from": "sample:TCGA-3L-AA1B",
+        "~to": "subtype:GI.CIN",
+        "~label": "HAS_SUBTYPE"
+      },
+      {
+        "~id": "e:sample:TCGA-4N-A93T:GI.CIN",
+        "~from": "sample:TCGA-4N-A93T",
+        "~to": "subtype:GI.CIN",
+        "~label": "HAS_SUBTYPE"
+      },
+      {
+        "~id": "e:sample:TCGA-4T-AA8H:GI.CIN",
+        "~from": "sample:TCGA-4T-AA8H",
+        "~to": "subtype:GI.CIN",
+        "~label": "HAS_SUBTYPE"
+      }
+    ]
+  },
+  {
+    "path": "ECoGraph/data/neptune_csv/edges_in_pathway.csv",
+    "bytes": 4339581,
+    "sha256": "8d2096b97cee6add932c7743904a4f1bb522de9261fca4a2601827db09507492",
+    "columns": [
+      "~id",
+      "~from",
+      "~to",
+      "~label"
+    ],
+    "representative_records": [
+      {
+        "~id": "e:gene:CHUK:BIOCARTA_41BB_PATHWAY",
+        "~from": "gene:CHUK",
+        "~to": "pathway:BIOCARTA_41BB_PATHWAY",
+        "~label": "IN_PATHWAY"
+      },
+      {
+        "~id": "e:gene:CHUK:BIOCARTA_AKT_PATHWAY",
+        "~from": "gene:CHUK",
+        "~to": "pathway:BIOCARTA_AKT_PATHWAY",
+        "~label": "IN_PATHWAY"
+      },
+      {
+        "~id": "e:gene:CHUK:BIOCARTA_CD40_PATHWAY",
+        "~from": "gene:CHUK",
+        "~to": "pathway:BIOCARTA_CD40_PATHWAY",
+        "~label": "IN_PATHWAY"
+      }
+    ]
+  },
+  {
+    "path": "ECoGraph/data/neptune_csv/edges_is_of_age.csv",
+    "bytes": 29567,
+    "sha256": "da4a59848a3e929a188a8e25320ca741d830de1100b1eb06da37135a241eee90",
+    "columns": [
+      "~id",
+      "~from",
+      "~to",
+      "~label"
+    ],
+    "representative_records": [
+      {
+        "~id": "e:sample:TCGA-3L-AA1B:TCGA-3L-AA1B",
+        "~from": "sample:TCGA-3L-AA1B",
+        "~to": "age:>50",
+        "~label": "IS_OF_AGE"
+      },
+      {
+        "~id": "e:sample:TCGA-4N-A93T:TCGA-4N-A93T",
+        "~from": "sample:TCGA-4N-A93T",
+        "~to": "age:>50",
+        "~label": "IS_OF_AGE"
+      },
+      {
+        "~id": "e:sample:TCGA-4T-AA8H:TCGA-4T-AA8H",
+        "~from": "sample:TCGA-4T-AA8H",
+        "~to": "age:<=50",
+        "~label": "IS_OF_AGE"
+      }
+    ]
+  }
+]

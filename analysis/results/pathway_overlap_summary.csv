@@ -1,0 +1,2 @@
+ecograph_pathways,primekg_pathways,confident_matches,confident_mapping_pct,unmatched_without_confident_mapping,ambiguous_label_candidates,unique_unverified_label_candidates,biological_overlap_pct,interpretation
+2036,2516,0,0.0,2036,4,1542,,No stable pathway IDs/crosswalk supplied; confident mapping coverage is not biological overlap

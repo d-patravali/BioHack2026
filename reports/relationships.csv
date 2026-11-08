@@ -1,0 +1,57 @@
+relation,display_relation,x_type,y_type,raw_row_count
+anatomy_anatomy,parent-child,anatomy,anatomy,28064
+anatomy_protein_absent,expression absent,anatomy,gene/protein,19887
+anatomy_protein_absent,expression absent,gene/protein,anatomy,19887
+anatomy_protein_present,expression present,anatomy,gene/protein,1518203
+anatomy_protein_present,expression present,gene/protein,anatomy,1518203
+bioprocess_bioprocess,parent-child,biological_process,biological_process,105772
+bioprocess_protein,interacts with,biological_process,gene/protein,144805
+bioprocess_protein,interacts with,gene/protein,biological_process,144805
+cellcomp_cellcomp,parent-child,cellular_component,cellular_component,9690
+cellcomp_protein,interacts with,cellular_component,gene/protein,83402
+cellcomp_protein,interacts with,gene/protein,cellular_component,83402
+contraindication,contraindication,disease,drug,30675
+contraindication,contraindication,drug,disease,30675
+disease_disease,parent-child,disease,disease,64388
+disease_phenotype_negative,phenotype absent,disease,effect/phenotype,1193
+disease_phenotype_negative,phenotype absent,effect/phenotype,disease,1193
+disease_phenotype_positive,phenotype present,disease,effect/phenotype,150317
+disease_phenotype_positive,phenotype present,effect/phenotype,disease,150317
+disease_protein,associated with,disease,gene/protein,80411
+disease_protein,associated with,gene/protein,disease,80411
+drug_drug,synergistic interaction,drug,drug,2672628
+drug_effect,side effect,drug,effect/phenotype,64784
+drug_effect,side effect,effect/phenotype,drug,64784
+drug_protein,carrier,drug,gene/protein,864
+drug_protein,carrier,gene/protein,drug,864
+drug_protein,enzyme,drug,gene/protein,5317
+drug_protein,enzyme,gene/protein,drug,5317
+drug_protein,target,drug,gene/protein,16380
+drug_protein,target,gene/protein,drug,16380
+drug_protein,transporter,drug,gene/protein,3092
+drug_protein,transporter,gene/protein,drug,3092
+exposure_bioprocess,interacts with,biological_process,exposure,1625
+exposure_bioprocess,interacts with,exposure,biological_process,1625
+exposure_cellcomp,interacts with,cellular_component,exposure,10
+exposure_cellcomp,interacts with,exposure,cellular_component,10
+exposure_disease,linked to,disease,exposure,2304
+exposure_disease,linked to,exposure,disease,2304
+exposure_exposure,parent-child,exposure,exposure,4140
+exposure_molfunc,interacts with,exposure,molecular_function,45
+exposure_molfunc,interacts with,molecular_function,exposure,45
+exposure_protein,interacts with,exposure,gene/protein,1212
+exposure_protein,interacts with,gene/protein,exposure,1212
+indication,indication,disease,drug,9388
+indication,indication,drug,disease,9388
+molfunc_molfunc,parent-child,molecular_function,molecular_function,27148
+molfunc_protein,interacts with,gene/protein,molecular_function,69530
+molfunc_protein,interacts with,molecular_function,gene/protein,69530
+off-label use,off-label use,disease,drug,2568
+off-label use,off-label use,drug,disease,2568
+pathway_pathway,parent-child,pathway,pathway,5070
+pathway_protein,interacts with,gene/protein,pathway,42646
+pathway_protein,interacts with,pathway,gene/protein,42646
+phenotype_phenotype,parent-child,effect/phenotype,effect/phenotype,37472
+phenotype_protein,associated with,effect/phenotype,gene/protein,3330
+phenotype_protein,associated with,gene/protein,effect/phenotype,3330
+protein_protein,ppi,gene/protein,gene/protein,642150
